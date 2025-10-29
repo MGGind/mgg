@@ -80,7 +80,7 @@
 	<!-- Home -->
 
 	<div style="position: relative; width: 100vw; height: 100vh; overflow: hidden; margin: 0; padding: 0;">
-	<img src="images/contakt_2.png" alt="Background"
+	<img src="images/Contakt_2.png" alt="Background"
        style="width: 100%; height: 100%; object-fit: cover; display: block;">
 	
 		<div class="home_title">
@@ -114,24 +114,64 @@
 			
 			<!-- Google Map Container -->
 
-			<div class="row">
-				<div class="col">
-					<div id="google_map">
-						<div class="map_container">
-							<div id="map"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 
-			<div class="row contact_row">
-				<div class="col-lg-8">
-					
+
+<!-- Creative Section with Particle Animation -->
+<section id="contact_effect" style="position: relative; width: 100%; height: 100vh; background: linear-gradient(135deg, #071a3d, #0a2a66); color: white; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center;">
+
+  <!-- Particle Container -->
+  <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+
+  <!-- Text -->
+  <div style="position: relative; z-index: 1; max-width: 800px; padding: 20px;">
+    <h2 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 25px; color: #00eaff; text-shadow: 0 0 15px #00eaff;">
+      Technology is the Energy of Connection
+    </h2>
+    <p style="font-size: 1.2rem; line-height: 1.9; color: #e6f1ff; opacity: 0.95;">
+      We design and create groundbreaking solutions that bring people, ideas, and cutting-edge technologies together. Our work is inspired by the future, pushing the boundaries of what’s possible — from intelligent smart systems that optimize everyday life, to eco-friendly drones that monitor and protect the environment, to hydrogen-powered vehicles that redefine sustainable transportation. We develop exoskeletons that enhance human abilities, making work safer and more efficient, and advanced automated technologies that transform industries and empower communities. Every project we undertake is a bridge to a smarter, greener, and more connected world, where innovation and sustainability go hand in hand, and every connection we create is a step toward a brighter tomorrow.
+    </p>
+  </div>
+</section>
+
+<!-- Particles.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+// Particle Effect Settings
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 110, "density": { "enable": true, "value_area": 900 } },
+    "color": { "value": "#00eaff" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.6, "random": true },
+    "size": { "value": 3, "random": true },
+    "line_linked": {
+      "enable": true,
+      "distance": 130,
+      "color": "#00eaff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": { "enable": true, "speed": 2, "direction": "none", "out_mode": "out" }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": { "enable": true, "mode": "grab" },
+      "resize": true
+    },
+    "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } } }
+  },
+  "retina_detect": true
+});
+</script>
+
 					<!-- Reply -->
 
 					<div class="reply">
 						
-						<div class="reply_title">Leave a reply</div>
+				
 						<div class="reply_form_container">
 							
 							<!-- Reply Form -->
@@ -166,9 +206,8 @@
 						
 						<div class="contact_info_container">
 
-							<div class="logo contact_logo">
-								<a href="#">MGG<span></span></a>
-							</div>
+
+							
 							<p>Here you can share your thoughts and ideas, as well as leave proposals for collaboration.</p>
 
 							
