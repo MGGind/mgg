@@ -579,7 +579,11 @@
     }
 
     // Contact Form Logic
-   
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Շնորհակալություն: Ձեր հայտն ընդունված է, մեր ինժեներները շուտով կկապնվեն ձեզ հետ:');
+      this.reset();
+    });
   </script>
 
 </body>
