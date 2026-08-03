@@ -11,469 +11,549 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'DM Sans',sans-serif;
-scroll-behavior:smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'DM Sans',sans-serif;
+  scroll-behavior:smooth;
 }
 
 body{
-background:#fff;
-color:#0f172a;
+  background:#fff;
+  color:#0f172a;
 }
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#fff;
-box-shadow:0 3px 12px rgba(0,0,0,.05);
-z-index:1000;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#fff;
+  box-shadow:0 3px 12px rgba(0,0,0,.05);
+  z-index:1000;
 }
 
 .container{
-max-width:1200px;
-margin:auto;
-padding:0 25px;
+  max-width:1200px;
+  margin:auto;
+  padding:0 25px;
 }
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-height:80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  min-height:80px;
+  gap:20px;
 }
 
 .logo{
-font-size:28px;
-font-weight:700;
-color:#2563eb;
+  font-size:28px;
+  font-weight:700;
+  color:#2563eb;
+  white-space:nowrap;
 }
 
 .menu{
-display:flex;
-gap:35px;
+  display:flex;
+  gap:35px;
+  align-items:center;
 }
 
 .menu a{
-text-decoration:none;
-color:#0f172a;
-font-weight:500;
-transition:.3s;
+  text-decoration:none;
+  color:#0f172a;
+  font-weight:500;
+  transition:.3s;
 }
 
 .menu a:hover{
-color:#2563eb;
+  color:#2563eb;
 }
 
 .contact-btn{
-background:#2563eb;
-color:white;
-padding:12px 24px;
-border-radius:999px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
+  background:#2563eb;
+  color:white;
+  padding:12px 24px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+  white-space:nowrap;
 }
 
 .contact-btn:hover{
-background:#1d4ed8;
+  background:#1d4ed8;
+}
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  font-size:30px;
+  cursor:pointer;
+  color:#0f172a;
 }
 
 .hero{
-padding-top:150px;
-padding-bottom:100px;
+  padding-top:150px;
+  padding-bottom:100px;
 }
 
 .hero-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-gap:60px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:60px;
 }
 
 .hero h1{
-font-size:55px;
-line-height:1.2;
-margin-bottom:25px;
+  font-size:55px;
+  line-height:1.2;
+  margin-bottom:25px;
 }
 
 .hero p{
-font-size:20px;
-color:#64748b;
-margin-bottom:35px;
-line-height:1.7;
+  font-size:20px;
+  color:#64748b;
+  margin-bottom:35px;
+  line-height:1.7;
 }
 
 .hero-btn{
-display:inline-block;
-background:#2563eb;
-padding:16px 34px;
-border-radius:999px;
-color:white;
-text-decoration:none;
-font-weight:600;
+  display:inline-block;
+  background:#2563eb;
+  padding:16px 34px;
+  border-radius:999px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
 }
 
 .hero img{
-width:100%;
-border-radius:25px;
+  width:100%;
+  border-radius:25px;
+  display:block;
 }
 
 .features{
-padding:90px 0;
-background:#eff6ff;
+  padding:90px 0;
+  background:#eff6ff;
 }
 
 .section-title{
-text-align:center;
-font-size:40px;
-margin-bottom:60px;
-font-weight:700;
+  text-align:center;
+  font-size:40px;
+  margin-bottom:60px;
+  font-weight:700;
 }
 
 .cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
 }
 
 .card{
-background:white;
-padding:40px;
-border-radius:25px;
-text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 
 .icon{
-width:70px;
-height:70px;
-background:#dbeafe;
-margin:auto;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-margin-bottom:25px;
+  width:70px;
+  height:70px;
+  background:#dbeafe;
+  margin:auto;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+  margin-bottom:25px;
 }
 
 .card h3{
-margin-bottom:15px;
-font-size:24px;
+  margin-bottom:15px;
+  font-size:24px;
 }
 
 .card p{
-color:#64748b;
-line-height:1.7;
+  color:#64748b;
+  line-height:1.7;
 }
 
+.steps-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.step{
+  display:flex;
+  gap:20px;
+  margin-bottom:40px;
+}
+
+.step-number{
+  width:45px;
+  height:45px;
+  background:#2563eb;
+  color:white;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  flex-shrink:0;
+}
+
+.cta-title{
+  font-size:45px;
+  color:white;
+  margin-bottom:25px;
+}
+
+.cta-text{
+  font-size:20px;
+  color:#dbeafe;
+  max-width:700px;
+  margin:auto auto 40px;
+  line-height:1.8;
+}
+
+.cta-btn{
+  display:inline-block;
+  background:white;
+  color:#2563eb;
+  padding:18px 38px;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+footer{
+  background:#1d4ed8;
+  padding:35px;
+  text-align:center;
+}
+
+footer p{
+  color:white;
+  font-size:17px;
+}
+
+.mobile-menu{
+  display:none;
+}
+
+/* Tablet */
 @media(max-width:900px){
+  .hero-grid,
+  .steps-grid,
+  .cards{
+    grid-template-columns:1fr;
+  }
 
-.hero-grid{
-grid-template-columns:1fr;
+  .hero h1{
+    font-size:38px;
+  }
+
+  .section-title{
+    font-size:32px;
+  }
+
+  .cta-title{
+    font-size:34px;
+  }
 }
 
-.cards{
-grid-template-columns:1fr;
+/* Phone */
+@media(max-width:768px){
+  nav{
+    flex-wrap:wrap;
+    padding:15px 0;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .menu{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:12px;
+    background:#f8fafc;
+    padding:15px;
+    border-radius:18px;
+    margin-top:10px;
+  }
+
+  .menu.active{
+    display:flex;
+  }
+
+  .menu a{
+    width:100%;
+    text-align:center;
+    padding:12px 0;
+    border-radius:12px;
+    background:white;
+  }
+
+  .contact-btn{
+    display:none;
+  }
+
+  .mobile-menu{
+    display:none;
+    width:100%;
+    margin-top:12px;
+  }
+
+  .mobile-menu.active{
+    display:block;
+  }
+
+  .mobile-menu .contact-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+  }
+
+  .hero{
+    padding-top:110px;
+    padding-bottom:70px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .hero-btn,
+  .cta-btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .card{
+    padding:28px;
+  }
+
+  .section-title{
+    margin-bottom:35px;
+  }
+
+  .features{
+    padding:70px 0;
+  }
+
+  .step{
+    margin-bottom:28px;
+  }
+
+  .cta-title{
+    font-size:30px;
+  }
+
+  .cta-text{
+    font-size:18px;
+  }
 }
 
-.menu{
-display:none;
-}
+@media(max-width:480px){
+  .container{
+    padding:0 16px;
+  }
 
-.hero h1{
-font-size:38px;
-}
+  .logo{
+    font-size:24px;
+  }
 
-.section-title{
-font-size:32px;
-}
+  .hero h1{
+    font-size:30px;
+  }
 
-}
+  .hero p{
+    font-size:16px;
+    line-height:1.6;
+  }
 
+  .section-title{
+    font-size:26px;
+  }
+
+  .card h3{
+    font-size:20px;
+  }
+
+  .card p{
+    font-size:15px;
+  }
+
+  .cta-title{
+    font-size:26px;
+  }
+
+  .cta-text{
+    font-size:16px;
+  }
+
+  footer p{
+    font-size:15px;
+  }
+}
 </style>
-
 </head>
 
 <body>
 
 <header>
+  <div class="container">
+    <nav>
+      <div class="logo">SolarClean</div>
 
-<div class="container">
+      <button class="menu-toggle" id="menuToggle">☰</button>
 
-<nav>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contacts.html">Contact</a>
+      </div>
 
-<div class="logo mr-auto">
-<img src="images/logo_11.png" alt="MGG Industries" width="110">
-</div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a class="contact-btn" href="contacts.html">Contact Us</a>
+      </div>
 
-
-
-<div class="menu">
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About Us</a>
-
-<a href="services.html">Services</a>
-
-<a href="portfolio.html">Portfolio</a>
-
-<a href="contacts.html">Contact</a>
-
-</div>
-
-<a class="contact-btn" href="contacts.html">Contact Us</a>
-
-</nav>
-
-</div>
-
+      <a class="contact-btn" href="contacts.html">Contact Us</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <h1>Automated Solar Panel Cleaning System</h1>
 
-<div class="container">
+        <p>
+          Cleaner Panels. More Energy. Zero Chemicals.
+          Our advanced automated cleaning system uses only water to remove dust, dirt, and debris, helping your solar panels generate more power while protecting the environment.
+        </p>
 
-<div class="hero-grid">
+        <a class="hero-btn" href="services.html">Our Services</a>
+      </div>
 
-<div>
-
-<h1>
-Automated Solar Panel Cleaning System
-</h1>
-
-<p>
-
-Cleaner Panels. More Energy. Zero Chemicals.
-Our advanced automated cleaning system uses only water to remove dust, dirt, and debris, helping your solar panels generate more power while protecting the environment.
-
-</p>
-
-<a class="hero-btn" href="services.html">
-
-Our Services
-
-</a>
-
-</div>
-
-<div>
-
-<img src="https://images.pexels.com/photos/13963757/pexels-photo-13963757.jpeg?auto=compress&cs=tinysrgb&w=1200">
-
-</div>
-
-</div>
-
-</div>
-
+      <div>
+        <img src="https://images.pexels.com/photos/13963757/pexels-photo-13963757.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Solar panel cleaning">
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="features">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us</h2>
 
-<div class="container">
+    <div class="cards">
+      <div class="card">
+        <div class="icon">💧</div>
+        <h3>Water-Based Cleaning</h3>
+        <p>Deep cleaning with pure water — no harmful chemicals. Eco-friendly maintenance for maximum panel performance.</p>
+      </div>
 
-<h2 class="section-title">
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h3>Full Autonomy</h3>
+        <p>The system automatically cleans your solar panels according to a schedule, without any manual operation.</p>
+      </div>
 
-Why Choose Us
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<div class="icon">💧</div>
-
-<h3>Water-Based Cleaning</h3>
-
-<p>
-
-Deep cleaning with pure water — no harmful chemicals. Eco-friendly maintenance for maximum panel performance.
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">🤖</div>
-
-<h3>Full Autonomy</h3>
-
-<p>
-
-The system automatically cleans your solar panels according to a schedule, without any manual operation.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">⚡</div>
-
-<h3>Up to 25% More Energy</h3>
-
-<p>
-
-Clean solar panels operate more efficiently, helping maximize energy production.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Up to 25% More Energy</h3>
+        <p>Clean solar panels operate more efficiently, helping maximize energy production.</p>
+      </div>
+    </div>
+  </div>
 </section>
+
 <section style="padding:100px 0;">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
 
-<div class="container">
+    <div class="steps-grid">
+      <div>
+        <img src="https://images.pexels.com/photos/8294654/pexels-photo-8294654.jpeg?auto=compress&cs=tinysrgb&w=1200" style="width:100%;border-radius:25px;" alt="System installation">
+      </div>
 
-<h2 class="section-title">
+      <div>
+        <div class="step">
+          <div class="step-number">1</div>
+          <div>
+            <h3 style="margin-bottom:10px;font-size:25px;">System Installation</h3>
+            <p style="color:#64748b;line-height:1.8;">Our specialists fully install the automatic cleaning system.</p>
+          </div>
+        </div>
 
-How It Works
+        <div class="step">
+          <div class="step-number">2</div>
+          <div>
+            <h3 style="margin-bottom:10px;font-size:25px;">System Configuration</h3>
+            <p style="color:#64748b;line-height:1.8;">We set up the cleaning schedule and integrate the smart control system.</p>
+          </div>
+        </div>
 
-</h2>
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
-
-<div>
-
-<img src="https://images.pexels.com/photos/8294654/pexels-photo-8294654.jpeg?auto=compress&cs=tinysrgb&w=1200"
-style="width:100%;border-radius:25px;">
-
-</div>
-
-<div>
-
-<div style="display:flex;gap:20px;margin-bottom:40px;">
-
-<div style="width:45px;height:45px;background:#2563eb;color:white;border-radius:50%;display:flex;justify-content:center;align-items:center;font-weight:bold;">
-1
-</div>
-
-<div>
-
-<h3 style="margin-bottom:10px;font-size:25px;">
-
-System Installation
-
-</h3>
-
-<p style="color:#64748b;line-height:1.8;">
-
-Our specialists fully install the automatic cleaning system.
-
-</p>
-
-</div>
-
-</div>
-
-<div style="display:flex;gap:20px;margin-bottom:40px;">
-
-<div style="width:45px;height:45px;background:#2563eb;color:white;border-radius:50%;display:flex;justify-content:center;align-items:center;font-weight:bold;">
-2
-</div>
-
-<div>
-
-<h3 style="margin-bottom:10px;font-size:25px;">
-
-System Configuration
-
-
-</h3>
-
-<p style="color:#64748b;line-height:1.8;">
-
-We set up the cleaning schedule and integrate the smart control system.
-
-</p>
-
-</div>
-
-</div>
-
-<div style="display:flex;gap:20px;">
-
-<div style="width:45px;height:45px;background:#2563eb;color:white;border-radius:50%;display:flex;justify-content:center;align-items:center;font-weight:bold;">
-3
-</div>
-
-<div>
-
-<h3 style="margin-bottom:10px;font-size:25px;">
-
-24/7 Performance
-
-</h3>
-
-<p style="color:#64748b;line-height:1.8;">
-
-The system works continuously to maintain your solar panels at maximum efficiency.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+        <div class="step" style="margin-bottom:0;">
+          <div class="step-number">3</div>
+          <div>
+            <h3 style="margin-bottom:10px;font-size:25px;">24/7 Performance</h3>
+            <p style="color:#64748b;line-height:1.8;">The system works continuously to maintain your solar panels at maximum efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section style="background:#2563eb;padding:100px 20px;text-align:center;">
+  <div class="container">
+    <h2 class="cta-title">Ready to maximize your solar energy output?</h2>
 
-<div class="container">
+    <p class="cta-text">
+      Get a free consultation and discover how our automatic solar panel cleaning system can improve your efficiency.
+    </p>
 
-<h2 style="font-size:45px;color:white;margin-bottom:25px;">
-
-Ready to maximize your solar energy output?
-
-</h2>
-
-<p style="font-size:20px;color:#dbeafe;max-width:700px;margin:auto auto 40px;line-height:1.8;">
-
-Get a free consultation and discover how our automatic solar panel cleaning system can improve your efficiency.
-
-</p>
-
-<a href="contacts.html"
-style="display:inline-block;background:white;color:#2563eb;padding:18px 38px;border-radius:999px;font-weight:700;text-decoration:none;">
-
-Get a Free Consultation
-
-</a>
-
-</div>
-
+    <a href="contacts.html" class="cta-btn">Get a Free Consultation</a>
+  </div>
 </section>
 
-<footer style="background:#1d4ed8;padding:35px;text-align:center;">
-
-<p style="color:white;font-size:17px;">
-
-© 2026 MGG. All rights reserved..
-
-</p>
-
+<footer>
+  <p>© 2026 MGG. All rights reserved.</p>
 </footer>
 
-</body>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const menu = document.getElementById("menu");
+  const mobileMenu = document.getElementById("mobileMenu");
 
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+      menuToggle.textContent = "✕";
+    } else {
+      menuToggle.textContent = "☰";
+    }
+  });
+</script>
+
+</body>
 </html>
- 
