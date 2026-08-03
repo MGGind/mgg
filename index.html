@@ -404,68 +404,77 @@
   </section>
 
 
-  <section id="contact" class="page">
-    <div class="page-hero">
-      <div class="container">
-        <h1>Կապնվեք Մեզ Հետ</h1>
-        <p>Ուղարկեք հարցում կամ պատվիրեք խորհրդատվություն մեր ինժեներական թիմից</p>
-      </div>
-    </div>
-
+ <section id="contact" class="page">
+  <div class="page-hero">
     <div class="container">
-      <div class="grid-2 section-block">
-        
-        <div class="form-box">
-          <h2 style="margin-bottom: 1.5rem; color: var(--text-dark);">Ուղարկել Հայտ</h2>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Անուն Ազգանուն *</label>
-              <input type="text" id="name" placeholder="Պողոս Պողոսյան" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Հեռախոսահամար *</label>
-              <input type="tel" id="phone" placeholder="+374 99 000000" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Էլ․ Փոստ</label>
-              <input type="email" id="email" placeholder="example@domain.com">
-            </div>
-            <div class="form-group">
-              <label for="system-type">Կայանի Տեսակը և Հզորությունը</label>
-              <select id="system-type">
-                <option value="roof">Տանիքային (մինչև 100 կՎտ)</option>
-                <option value="ground">Գետնադիր Ֆերմա (100 կՎտ - 1 ՄՎտ)</option>
-                <option value="industrial">Խոշոր Արդյունաբերական (1 ՄՎտ+)</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Հաղորդագրություն / Լրացուցիչ Մանրամասներ</label>
-              <textarea id="message" rows="4" placeholder="Նկարագրեք ձեր պահանջները..."></textarea>
-            </div>
-            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Ուղարկել Հայտը</button>
-          </form>
-        </div>
-
-        <div>
-          <div class="card" style="margin-bottom: 2rem;">
-            <h3 style="margin-bottom: 0.8rem;">📍 Արտադրամաս և Գրասենյակ</h3>
-            <p style="color: var(--text-muted);">ք. Երևան, Գյուրջյան 16/1 (Արտադրական մասնաշենք)</p>
-          </div>
-
-          <div class="card" style="margin-bottom: 2rem;">
-            <h3 style="margin-bottom: 0.8rem;">📞 Հեռախոսակապ</h3>
-            <p style="color: var(--text-muted);">+374 10 00-00-00<br>+374 99 00-00-00</p>
-          </div>
-
-          <div class="card" style="margin-bottom: 2rem;">
-            <h3 style="margin-bottom: 0.8rem;">✉️ Էլեկտրոնային Փոստ</h3>
-            <p style="color: var(--text-muted);">info@mgg.am<br>sales@mgg.am</p>
-          </div>
-        </div>
-
-      </div>
+      <h1>Կապնվեք Մեզ Հետ</h1>
+      <p>Ուղարկեք հարցում կամ պատվիրեք խորհրդատվություն մեր ինժեներական թիմից</p>
     </div>
-  </section>
+  </div>
+
+  <div class="container">
+    <div class="grid-2 section-block">
+      
+      <div class="form-box">
+        <h2 style="margin-bottom: 1.5rem; color: var(--text-dark);">Ուղարկել Հայտ</h2>
+        
+        <form id="contactForm" action="mail_php/mail.php" method="POST">
+          
+          <div class="form-group">
+            <label for="name">Անուն Ազգանուն *</label>
+
+            <input type="text" id="name" name="name" placeholder="Պողոս Պողոսյան" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Հեռախոսահամար *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+374 99 000000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Էլ․ Փոստ</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com">
+          </div>
+
+          <div class="form-group">
+            <label for="system-type">Կայանի Տեսակը և Հզորությունը</label>
+            <select id="system-type" name="system_type">
+              <option value="roof">Տանիքային (մինչև 100 կՎտ)</option>
+              <option value="ground">Գետնադիր Ֆերմա (100 կՎտ - 1 ՄՎտ)</option>
+              <option value="industrial">Խոշոր Արդյունաբերական (1 ՄՎտ+)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Հաղորդագրություն / Լրացուցիչ Մանրամասներ</label>
+
+            <textarea id="message" name="message" rows="4" placeholder="Նկարագրեք ձեր պահանջները..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Ուղարկել Հայտը</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom: 2rem;">
+          <h3 style="margin-bottom: 0.8rem;">📍 Արտադրամաս և Գրասենյակ</h3>
+          <p style="color: var(--text-muted);">ք. Երևան, Գյուրջյան 16/1 (Արտադրական մասնաշենք)</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 2rem;">
+          <h3 style="margin-bottom: 0.8rem;">📞 Հեռախոսակապ</h3>
+          <p style="color: var(--text-muted);">+374 10 00-00-00<br>+374 99 00-00-00</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 2rem;">
+          <h3 style="margin-bottom: 0.8rem;">✉️ Էլեկտրոնային Փոստ</h3>
+          <p style="color: var(--text-muted);">info@mgg.am<br>sales@mgg.am</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
   <footer>
