@@ -55,29 +55,21 @@
 </head>
 <body class="min-h-screen">
   <!-- Header -->
-<header>
-  <div class="container">
-    <nav>
-      <div class="logo">SolarClean</div>
+<header class="sticky top-0 z-50 border-b border-white/60 glass">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 py-4">
+      <a href="#about" class="text-2xl font-extrabold tracking-tight text-blue-700">SolarClean</a>
 
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-slate-700">
+         <a href="index.html" class="hover:text-blue-700 transition">Home</a>
+        <a href="about.html" class="text-blue-700 border-b-2 border-blue-700 pb-1">About US</a>
+        <a href="services.html" class="hover:text-blue-700 transition">Service</a>
+        <a href="portfolio.html" class="hover:text-blue-700 transition">Portfoli</a>
+        <a href="contacts.html" class="hover:text-blue-700 transition">Contact</a>
+      </nav>
 
-      <div class="menu" id="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contacts.html">Contact</a>
-      </div>
-
-      <div class="mobile-menu" id="mobileMenu">
-        <a class="contact-btn" href="contacts.html">Contact Us</a>
-      </div>
-
-      <a class="contact-btn" href="contacts.html">Contact Us</a>
-    </nav>
-  </div>
-</header>
+    
+    </div>
+  </header>
 
   <main id="about" class="mx-auto max-w-6xl px-4 sm:px-6">
     <!-- Title -->
