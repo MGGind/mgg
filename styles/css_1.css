@@ -1,4 +1,4 @@
- <style>
+
     /* ----- Global Variables & Design System ----- */
     :root {
       --primary: #1d4ed8;          /* Royal Blue */
@@ -495,4 +495,4 @@
       .page-hero { padding: 4rem 1rem; }
       .page-hero h1 { font-size: 2.2rem; }
     }
-  </style>
+  
