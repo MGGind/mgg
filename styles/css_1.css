@@ -495,4 +495,140 @@
       .page-hero { padding: 4rem 1rem; }
       .page-hero h1 { font-size: 2.2rem; }
     }
-  
+/* ========================================================================= */
+/* 1. GLOBAL RESET & PREVENT HORIZONTAL SCROLL                               */
+/* ========================================================================= */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling on all devices */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Make all media elements responsive by default */
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================================================================= */
+/* 2. RESPONSIVE TABLE WRAPPER                                               */
+/* ========================================================================= */
+/* Wrap your <table> inside a div with this class to allow inner scroll only */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  min-width: 500px; /* Maintains readability inside the scrollable container */
+}
+
+/* ========================================================================= */
+/* 3. STANDARD TABLETS & MOBILE PHONES (MAX-WIDTH: 768px)                   */
+/* ========================================================================= */
+@media (max-width: 768px) {
+  /* Reduce side padding for tablet and mobile viewports */
+  .container {
+    padding: 0 1rem !important;
+  }
+
+  /* Force all multi-column grids to wrap into a single column */
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Adjust typography for medium/small screens */
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .page-hero h1 {
+    font-size: 1.8rem !important;
+  }
+
+  /* Scale down image preview containers */
+  .img-container {
+    height: 250px !important;
+  }
+
+  /* Reduce card paddings */
+  .form-box, .card {
+    padding: 1.25rem !important;
+  }
+}
+
+/* ========================================================================= */
+/* 4. EXTRA SMALL MOBILE SCREENS (MAX-WIDTH: 480px)                         */
+/* e.g., iPhone SE, Small Android Devices (320px - 400px viewports)          */
+/* ========================================================================= */
+@media (max-width: 480px) {
+  /* Minimize side margins to maximize readable content area */
+  .container {
+    padding: 0 0.75rem !important;
+  }
+
+  /* Downscale heading font sizes to prevent text overflowing horizontally */
+  .hero-title {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .page-hero h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .section-title h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .hero-subtitle, .section-title p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Make action buttons full-width to prevent overlap or clipping */
+  .btn-primary, .btn-outline {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.8rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Further reduce image container heights for compact displays */
+  .img-container {
+    height: 190px !important;
+  }
+
+  .img-container-card {
+    height: 160px !important;
+  }
+
+  /* Compress padding inside forms and feature cards */
+  .form-box, .card, .feature-card {
+    padding: 1rem !important;
+    border-radius: 12px !important;
+  }
+
+  /* Adjust calculator output display font size */
+  #res-energy, #res-money {
+    font-size: 1.5rem !important;
+  }
+}
