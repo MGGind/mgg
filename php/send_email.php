@@ -5,7 +5,7 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // 1. REPLACE THIS WITH YOUR ACTUAL EMAIL ADDRESS
-    $to = "your-email@example.com"; 
+    $to = "mggindustries.company@gmail.com"; 
     $subject = "New Contact Form Submission";
 
     // 2. Retrieve and sanitize input data from JS FormData
