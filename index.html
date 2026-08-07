@@ -8,755 +8,754 @@
 </head>
 <body>
 
-  <header>
-    <div class="container nav-container">
-      <a onclick="showPage('home')" class="logo">❖ MGG <span>SYSTEMS</span></a>
-      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Menu">☰</button>
+<header>
+  <div class="container nav-container">
+    <a onclick="showPage('home')" class="logo">❖ MGG <span>SYSTEMS</span></a>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a onclick="showPage('home')" id="nav-home" class="active">Գլխավոր</a></li>
-        <li><a onclick="showPage('about')" id="nav-about">Մեր Մասին</a></li>
-        <li><a onclick="showPage('solar')" id="nav-solar">☀️ Արևային</a></li>
-        <li><a onclick="showPage('automation')" id="nav-automation">⚙️ PLC / SCADA</a></li>
-        <li><a onclick="showPage('hardware')" id="nav-hardware">🔬 Custom Hardware & PCB</a></li>
-        <li><a onclick="showPage('projects')" id="nav-projects">Նախագծեր</a></li>
-        <li><a onclick="showPage('faq')" id="nav-faq">FAQ</a></li>
-      </ul>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Menu">☰</button>
 
-      <button onclick="showPage('contact')" class="btn-header">Կապնվել Մեզ Հետ</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a onclick="showPage('home')" id="nav-home" data-i18n="nav_home" class="active">Գլխավոր</a></li>
+      <li><a onclick="showPage('about')" id="nav-about" data-i18n="nav_about">Մեր Մասին</a></li>
+      <li><a onclick="showPage('solar')" id="nav-solar" data-i18n="nav_solar">☀️ Արևային</a></li>
+      <li><a onclick="showPage('automation')" id="nav-automation" data-i18n="nav_automation">⚙️ PLC / SCADA</a></li>
+      <li><a onclick="showPage('hardware')" id="nav-hardware" data-i18n="nav_hardware">🔬 Custom Hardware & PCB</a></li>
+      <li><a onclick="showPage('projects')" id="nav-projects" data-i18n="nav_projects">Նախագծեր</a></li>
+      <li><a onclick="showPage('faq')" id="nav-faq" data-i18n="nav_faq">FAQ</a></li>
+    </ul>
+
+    <div class="nav-right-group">
+      <div class="lang-switch">
+        <button id="lang-hy" onclick="switchLanguage('hy')" class="active">AM</button> |
+        <button id="lang-en" onclick="switchLanguage('en')">EN</button>
+      </div>
+      <button onclick="showPage('contact')" class="btn-header" data-i18n="btn_contact">Կապնվել Մեզ Հետ</button>
     </div>
-  </header>
+  </div>
+</header>
 
 
-  <main id="page-home" class="page-view active">
+ 
+
+
+
+<main id="page-home" class="page-view active">
     
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-tag">ԻՆԺԵՆԵՐԱԿԱՆ ԼՈՒԾՈՒՄՆԵՐ, EMBEDDED SYSTEMS ԵՎ ՌՈԲՈՏՈՏԵԽՆԻԿԱ</span>
-          <h1>ԲԱՐՁՐ ՃՇԳՐՏՈՒԹՅԱՆ ԱՎՏՈՄԱՏԱՑՎԱԾ ՀԱՄԱԿԱՐԳԵՐ ԱՐԴՅՈՒՆԱԲԵՐՈՒԹՅԱՆ ՀԱՄԱՐ</h1>
-          <p>MGG Systems-ը մասնագիտացված է ինտելեկտուալ ռոբոտացված ագրեգատների, արտադրական PLC/SCADA ավտոմատացման, custom էլեկտրոնային սալիկների (PCB) նախագծման և հատուկ նշանակության մեխանիզմների ստեղծման մեջ։</p>
-          <div class="hero-btns">
-            <button onclick="showPage('solar')" class="btn-primary">☀️ Արևային Համակարգեր ➔</button>
-            <button onclick="showPage('automation')" class="btn-secondary">⚙️ Արդյունաբերական Ավտոմատացում</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  <section class="hero">
     <div class="container">
-      <div class="features-bar">
-        <div class="features-grid">
-          <div class="feature-item">
-            <h4>📈 Առավելագույն Արտադրողականություն</h4>
-            <p>Պրոցեսների ավտոմատացումը բարձրացնում է ՕԳԳ-ն և նվազեցնում մարդկային գործոնի սխալները։</p>
-          </div>
-          <div class="feature-item">
-            <h4>🛡️ IP67 Պաշտպանվածություն</h4>
-            <p>Սարքավորումները նախագծված են ծայրահեղ ջերմաստիճաններում (-30°C-ից +65°C) աշխատելու համար։</p>
-          </div>
-          <div class="feature-item">
-            <h4>⚙️ Ավտոնոմ Ղեկավարում & IoT</h4>
-            <p>RS485/Modbus, CAN bus, Cloud-մոնիտորինգ, real-time տվյալների հավաքագրում։</p>
-          </div>
-          <div class="feature-item">
-            <h4>🌿 Էկոլոգիական & Էներգախնայող</h4>
-            <p>Օպտիմալացված էներգասպառում, չոր մաքրման տեխնոլոգիա և անխափան ռեսուրսների խնայողություն։</p>
-          </div>
-          <div class="feature-item">
-            <h4>⚡ Ultra-Fast Response</h4>
-            <p>24/7 վթարային ազդանշանների ստացում և արագ արձագանքման Cloud architecture։</p>
-          </div>
-          <div class="feature-item">
-            <h4>🔒 Industrial Cybersecurity</h4>
-            <p>Պաշտպանված տվյալների փոխանցման պրոտոկոլներ և կոդավորված ալգորիթմներ։</p>
-          </div>
-          <div class="feature-item">
-            <h4>🧩 Modular Hardware Design</h4>
-            <p>Հեշտ ընդլայնվող և փոխարինելի էլեկտրոնային ու մեխանիկական մոդուլներ։</p>
-          </div>
-          <div class="feature-item">
-            <h4>🏆 ISO Quality Standards</h4>
-            <p>Բոլոր սարքավորումներն անցնում են խիստ լաբորատոր test-run և որակի ստուգում։</p>
-          </div>
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="hero_tag">ԻՆԺԵՆԵՐԱԿԱՆ ԼՈՒԾՈՒՄՆԵՐ, EMBEDDED SYSTEMS ԵՎ ՌՈԲՈՏՈՏԵԽՆԻԿԱ</span>
+        <h1 data-i18n="hero_title">ԲԱՐՁՐ ՃՇԳՐՏՈՒԹՅԱՆ ԱՎՏՈՄԱՏԱՑՎԱԾ ՀԱՄԱԿԱՐԳԵՐ ԱՐԴՅՈՒՆԱԲԵՐՈՒԹՅԱՆ ՀԱՄԱՐ</h1>
+        <p data-i18n="hero_desc">MGG Systems-ը մասնագիտացված է ինտելեկտուալ ռոբոտացված ագրեգատների, արտադրական PLC/SCADA ավտոմատացման, custom էլեկտրոնային սալիկների (PCB) նախագծման և հատուկ նշանակության մեխանիզմների ստեղծման մեջ։</p>
+        <div class="hero-btns">
+          <button onclick="showPage('solar')" class="btn-primary" data-i18n="hero_btn_solar">☀️ Արևային Համակարգեր ➔</button>
+          <button onclick="showPage('automation')" class="btn-secondary" data-i18n="hero_btn_automation">⚙️ Արդյունաբերական Ավտոմատացում</button>
         </div>
       </div>
     </div>
+  </section>
+
+  <div class="container">
+    <div class="features-bar">
+      <div class="features-grid">
+        <div class="feature-item">
+          <h4 data-i18n="feat_1_title">📈 Առավելագույն Արտադրողականություն</h4>
+          <p data-i18n="feat_1_desc">Պրոցեսների ավտոմատացումը բարձրացնում է ՕԳԳ-ն և նվազեցնում մարդկային գործոնի սխալները։</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_2_title">🛡️ IP67 Պաշտպանվածություն</h4>
+          <p data-i18n="feat_2_desc">Սարքավորումները նախագծված են ծայրահեղ ջերմաստիճաններում (-30°C-ից +65°C) աշխատելու համար։</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_3_title">⚙️ Ավտոնոմ Ղեկավարում & IoT</h4>
+          <p data-i18n="feat_3_desc">RS485/Modbus, CAN bus, Cloud-մոնիտորինգ, real-time տվյալների հավաքագրում։</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_4_title">🌿 Էկոլոգիական & Էներգախնայող</h4>
+          <p data-i18n="feat_4_desc">Օպտիմալացված էներգասպառում, չոր մաքրման տեխնոլոգիա և անխափան ռեսուրսների խնայողություն։</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_5_title">⚡ Ultra-Fast Response</h4>
+          <p data-i18n="feat_5_desc">24/7 վթարային ազդանշանների ստացում և արագ արձագանքման Cloud architecture։</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_6_title">🔒 Industrial Cybersecurity</h4>
+          <p data-i18n="feat_6_desc">Պաշտպանված տվյալների փոխանցման պրոտոկոլներ և կոդավորված ալգորիթմներ։</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_7_title">🧩 Modular Hardware Design</h4>
+          <p data-i18n="feat_7_desc">Հեշտ ընդլայնվող և փոխարինելի էլեկտրոնային ու մեխանիկական մոդուլներ։</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_8_title">🏆 ISO Quality Standards</h4>
+          <p data-i18n="feat_8_desc">Բոլոր սարքավորումներն անցնում են խիստ լաբորատոր test-run և որակի ստուգում։</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <section class="section">
-      <div class="container">
-        <h2 class="section-title">Գործունեության 6 Հիմնական Ուղղությունները</h2>
-        <p class="section-subtitle">Մեր բազմապրոֆիլ ինժեներական թիմն իրականացնում է բարդ խնդիրների լուծում հետևյալ ոլորտներում։</p>
+  <div class="container">
+    <h2 class="section-title" data-i18n="services_title">Գործունեության 6 Հիմնական Ուղղությունները</h2>
+    <p class="section-subtitle" data-i18n="services_subtitle">Մեր բազմապրոֆիլ ինժեներական թիմն իրականացնում է բարդ խնդիրների լուծում հետևյալ ոլորտներում։</p>
 
-        <div class="grid-3">
-          <div class="card" onclick="showPage('solar')" style="cursor: pointer;">
-            <img src="img/1.png" alt="Solar Automation" class="card-img">
-            <span class="badge">Robotics & Solar</span>
-            <h3>☀️ Արևային Կայանների Ռոբոտացում</h3>
-            <p>Արևային ֆերմաների և տանիքային կայանների ավտոմատացված ու ռոբոտացված լվացման համակարգեր։</p>
-            <ul>
-              <li>Փոշու և աղտոտվածության հեռացում 99.2% արդյունավետությամբ</li>
-              <li>Էներգիայի արտադրողականության մինչև 30% վերականգնում</li>
-              <li>Առանց ջրի չոր մաքրման արտոնագրված տեխնոլոգիա</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Իմանալ ավելին ➔</p>
-          </div>
-
-          <div class="card" onclick="showPage('automation')" style="cursor: pointer;">
-            <img src="img/2.png" alt="Industrial Automation" class="card-img">
-            <span class="badge">Industrial Controls</span>
-            <h3>🤖 Արդյունաբերական PLC / SCADA</h3>
-            <p>PLC/SCADA համակարգերի նախագծում, արտադրական գծերի ավտոմատացում և տվյալների հավաքագրում։</p>
-            <ul>
-              <li>Siemens S7, Schneider, Delta PLC ծրագրավորում</li>
-              <li>HMI պանելների և SCADA դիսպետչերական համակարգեր</li>
-              <li>PID control loop-եր և VFD շարժիչների ղեկավարում</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Իմանալ ավելին ➔</p>
-          </div>
-
-          <div class="card" onclick="showPage('hardware')" style="cursor: pointer;">
-            <img src="img/3.png" alt="Hardware Engineering" class="card-img">
-            <span class="badge">Hardware Engineering</span>
-            <h3>🔬 Custom Hardware & PCB Layout</h3>
-            <p>Անհատական պատվերով էլեկտրոնային սալիկների (PCB) նախագծում և ներդրված համակարգերի մշակում։</p>
-            <ul>
-              <li>Altium Designer PCB layout (1-8 layer բազմաշերտ սալիկներ)</li>
-              <li>STM32, ESP32, FPGA (Verilog RTL) micro-controller համակարգեր</li>
-              <li>Power electronics, High-speed signal integrity</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Իմանալ ավելին ➔</p>
-          </div>
-
-          <div class="card" onclick="showPage('automation')" style="cursor: pointer;">
-            <img src="img/4.png" alt="AGV Robotics" class="card-img">
-            <span class="badge">Intralogistics</span>
-            <h3>🚚 Ավտոնոմ Տրանսպորտային AGV Ռոբոտներ</h3>
-            <p>Պահեստային և արտադրական տարածքների համար բեռնատար AGV & AMR ռոբոտների մշակում։</p>
-            <ul>
-              <li>LiDAR 2D/3D mapping & SLAM navigation</li>
-              <li>500kg+ բեռնատարողություն և ավտոմատ docking charge</li>
-              <li>Fleet management ծրագրային ինտեգրում</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Իմանալ ավելին ➔</p>
-          </div>
-
-          <div class="card" onclick="showPage('hardware')" style="cursor: pointer;">
-            <img src="img/5.png" alt="Industrial IoT" class="card-img">
-            <span class="badge">IoT & Cloud</span>
-            <h3>🌐 Industrial IoT & Remote Telemetry</h3>
-            <p>Անլար սենսորային ցանցեր և հեռակա մոնիտորինգի IoT պլատֆորմներ արդյունաբերության համար։</p>
-            <ul>
-              <li>LoRaWAN, Wi-Fi, Cellular 4G/5G gateways</li>
-              <li>MQTT, CoAP և REST API Cloud integration</li>
-              <li>Real-time dashboard analytics & Alert systems</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Իմանալ ավելին ➔</p>
-          </div>
-
-          <div class="card" onclick="showPage('projects')" style="cursor: pointer;">
-            <img src="img/6.png" alt="FPGA DSP Systems" class="card-img">
-            <span class="badge">Digital Logic</span>
-            <h3>📡 FPGA & Ultra-Low Latency Signal Processing</h3>
-            <p>Բարձր հաճախականության տվյալների մշակում Xilinx FPGA և Verilog RTL ճարտարապետության վրա։</p>
-            <ul>
-              <li>High-speed ADC/DAC interfaces</li>
-              <li>DSP pipeline ալգորիթմների իրականացում</li>
-              <li>Ultra-fast hardware logic processing (<10ns)</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Իմանալ ավելին ➔</p>
-          </div>
-        </div>
-
-        <div class="stats-box">
-          <div class="stats-grid">
-            <div>
-              <div class="stat-number">100,000+</div>
-              <div class="stat-label">Մ² Մաքրված Արևային Պանելներ</div>
-            </div>
-            <div>
-              <div class="stat-number">99.9%</div>
-              <div class="stat-label">Սարքավորումների Անխափան Աշխատանք</div>
-            </div>
-            <div>
-              <div class="stat-number">65+</div>
-              <div class="stat-label">Ավտոմատացված Արտադրական Նախագծեր</div>
-            </div>
-            <div>
-              <div class="stat-number">24/7</div>
-              <div class="stat-label">Հեռակա IoT Մոնիտորինգ & Support</div>
-            </div>
-          </div>
-        </div>
-
+    <div class="grid-3">
+      <div class="card" onclick="showPage('solar')" style="cursor: pointer;">
+        <img src="img/1.png" alt="Solar Automation" class="card-img">
+        <span class="badge">Robotics & Solar</span>
+        <h3 data-i18n="srv_1_title">☀️ Արևային Կայանների Ռոբոտացում</h3>
+        <p data-i18n="srv_1_desc">Արևային ֆերմաների և տանիքային կայանների ավտոմատացված ու ռոբոտացված լվացման համակարգեր։</p>
+        <ul>
+          <li data-i18n="srv_1_f1">Փոշու և աղտոտվածության հեռացում 99.2% արդյունավետությամբ</li>
+          <li data-i18n="srv_1_f2">Էներգիայի արտադրողականության մինչև 30% վերականգնում</li>
+          <li data-i18n="srv_1_f3">Առանց ջրի չոր մաքրման արտոնագրված տեխնոլոգիա</li>
+        </ul>
+        <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="learn_more">Իմանալ ավելին ➔</p>
       </div>
-    </section>
-  </main>
+
+      <div class="card" onclick="showPage('automation')" style="cursor: pointer;">
+        <img src="img/2.png" alt="Industrial Automation" class="card-img">
+        <span class="badge">Industrial Controls</span>
+        <h3 data-i18n="srv_2_title">🤖 Արդյունաբերական PLC / SCADA</h3>
+        <p data-i18n="srv_2_desc">PLC/SCADA համակարգերի նախագծում, արտադրական գծերի ավտոմատացում և տվյալների հավաքագրում։</p>
+        <ul>
+          <li data-i18n="srv_2_f1">Siemens S7, Schneider, Delta PLC ծրագրավորում</li>
+          <li data-i18n="srv_2_f2">HMI պանելների և SCADA դիսպետչերական համակարգեր</li>
+          <li data-i18n="srv_2_f3">PID control loop-եր և VFD շարժիչների ղեկավարում</li>
+        </ul>
+        <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="learn_more">Իմանալ ավելին ➔</p>
+      </div>
+
+      <div class="card" onclick="showPage('hardware')" style="cursor: pointer;">
+        <img src="img/3.png" alt="Hardware Engineering" class="card-img">
+        <span class="badge">Hardware Engineering</span>
+        <h3 data-i18n="srv_3_title">🔬 Custom Hardware & PCB Layout</h3>
+        <p data-i18n="srv_3_desc">Անհատական պատվերով էլեկտրոնային սալիկների (PCB) նախագծում և ներդրված համակարգերի մշակում։</p>
+        <ul>
+          <li data-i18n="srv_3_f1">Altium Designer PCB layout (1-8 layer բազմաշերտ սալիկներ)</li>
+          <li data-i18n="srv_3_f2">STM32, ESP32, FPGA (Verilog RTL) micro-controller համակարգեր</li>
+          <li data-i18n="srv_3_f3">Power electronics, High-speed signal integrity</li>
+        </ul>
+        <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="learn_more">Իմանալ ավելին ➔</p>
+      </div>
+
+      <div class="card" onclick="showPage('automation')" style="cursor: pointer;">
+        <img src="img/4.png" alt="AGV Robotics" class="card-img">
+        <span class="badge">Intralogistics</span>
+        <h3 data-i18n="srv_4_title">🚚 Ավտոնոմ Տրանսպորտային AGV Ռոբոտներ</h3>
+        <p data-i18n="srv_4_desc">Պահեստային և արտադրական տարածքների համար բեռնատար AGV & AMR ռոբոտների մշակում։</p>
+        <ul>
+          <li data-i18n="srv_4_f1">LiDAR 2D/3D mapping & SLAM navigation</li>
+          <li data-i18n="srv_4_f2">500kg+ բեռնատարողություն և ավտոմատ docking charge</li>
+          <li data-i18n="srv_4_f3">Fleet management ծրագրային ինտեգրում</li>
+        </ul>
+        <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="learn_more">Իմանալ ավելին ➔</p>
+      </div>
+
+      <div class="card" onclick="showPage('hardware')" style="cursor: pointer;">
+        <img src="img/5.png" alt="Industrial IoT" class="card-img">
+        <span class="badge">IoT & Cloud</span>
+        <h3 data-i18n="srv_5_title">🌐 Industrial IoT & Remote Telemetry</h3>
+        <p data-i18n="srv_5_desc">Անլար սենսորային ցանցեր և հեռակա մոնիտորինգի IoT պլատֆորմներ արդյունաբերության համար։</p>
+        <ul>
+          <li data-i18n="srv_5_f1">LoRaWAN, Wi-Fi, Cellular 4G/5G gateways</li>
+          <li data-i18n="srv_5_f2">MQTT, CoAP և REST API Cloud integration</li>
+          <li data-i18n="srv_5_f3">Real-time dashboard analytics & Alert systems</li>
+        </ul>
+        <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="learn_more">Իմանալ ավելին ➔</p>
+      </div>
+
+      <div class="card" onclick="showPage('projects')" style="cursor: pointer;">
+        <img src="img/6.png" alt="FPGA DSP Systems" class="card-img">
+        <span class="badge">Digital Logic</span>
+        <h3 data-i18n="srv_6_title">📡 FPGA & Ultra-Low Latency Signal Processing</h3>
+        <p data-i18n="srv_6_desc">Բարձր հաճախականության տվյալների մշակում Xilinx FPGA և Verilog RTL ճարտարապետության վրա։</p>
+        <ul>
+          <li data-i18n="srv_6_f1">High-speed ADC/DAC interfaces</li>
+          <li data-i18n="srv_6_f2">DSP pipeline ալգորիթմների իրականացում</li>
+          <li data-i18n="srv_6_f3">Ultra-fast hardware logic processing (&lt;10ns)</li>
+        </ul>
+        <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="learn_more">Իմանալ ավելին ➔</p>
+      </div>
+    </div>
+
+    <div class="stats-box">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-number">100,000+</div>
+          <div class="stat-label" data-i18n="stat_1_label">Մ² Մաքրված Արևային Պանելներ</div>
+        </div>
+        <div>
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label" data-i18n="stat_2_label">Սարքավորումների Անխափան Աշխատանք</div>
+        </div>
+        <div>
+          <div class="stat-number">65+</div>
+          <div class="stat-label" data-i18n="stat_3_label">Ավտոմատացված Արտադրական Նախագծեր</div>
+        </div>
+        <div>
+          <div class="stat-number">24/7</div>
+          <div class="stat-label" data-i18n="stat_4_label">Հեռակա IoT Մոնիտորինգ & Support</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
 
 
   <main id="page-about" class="page-view">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-tag">ՄԵՐ ՄԱՍԻՆ</span>
-          <h1>ԻՆԺԵՆԵՐԱԿԱՆ ՄԻՏՔ, ԷԼԵԿՏՐՈՆԻԿԱ ԵՎ ՌՈԲՈՏՈՏԵԽՆԻԿԱ</h1>
-          <p>MGG Systems-ը հայկական առաջատար ինժեներական ընկերություն է, որը մասնագիտացած է ավտոմատացման համակարգերի, ռոբոտոտեխնիկայի, custom էլեկտրոնիկայի (PCB Design) և embedded ծրագրավորման մեջ։</p>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="about_hero_tag">ՄԵՐ ՄԱՍԻՆ</span>
+        <h1 data-i18n="about_hero_title">ԻՆԺԵՆԵՐԱԿԱՆ ՄԻՏՔ, ԷԼԵԿՏՐՈՆԻԿԱ ԵՎ ՌՈԲՈՏՈՏԵԽՆԻԿԱ</h1>
+        <p data-i18n="about_hero_desc">MGG Systems-ը հայկական առաջատար ինժեներական ընկերություն է, որը մասնագիտացված է ավտոմատացման համակարգերի, ռոբոտոտեխնիկայի, custom էլեկտրոնիկայի (PCB Design) և embedded ծրագրավորման մեջ։</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="margin-bottom: 50px;">
+        <div class="card">
+          <img src="img/7.png" alt="R&D Engineering" class="card-img">
+          <h3 data-i18n="about_mission_title">🎯 Մեր Առաքելությունը</h3>
+          <p data-i18n="about_mission_desc">Ապահովել արդյունաբերական, էներգետիկ և տեխնոլոգիական ոլորտի ընկերություններին ժամանակակից, հուսալի և բարձր արդյունավետությամբ օժտված ռոբոտացված լուծումներով։ Մենք ձգտում ենք դարձնել արտադրական պրոցեսները ավելի անվտանգ, արագ և էներգախնայող։</p>
+        </div>
+        <div class="card">
+          <img src="img/8.png" alt="Hardware Testing" class="card-img">
+          <h3 data-i18n="about_rnd_title">🔬 Տեխնոլոգիական Բազան & R&D</h3>
+          <p data-i18n="about_rnd_desc">Մեր լաբորատորիայում իրականացվում է 3D CAD մեխանիկական նախագծում, PCB layout Altium Designer-ով և embedded ծրագրավորում C/C++ ու Verilog լեզուներով։ Մենք ունենք սեփական CNC մշակման և տպասալիկների պատրաստման ու թեստավորման հանգույցներ։</p>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="grid-2" style="margin-bottom: 50px;">
-          <div class="card">
-            <img src="img/7.png" alt="R&D Engineering" class="card-img">
-            <h3>🎯 Մեր Առաքելությունը</h3>
-            <p>Ապահովել արդյունաբերական, էներգետիկ և տեխնոլոգիական ոլորտի ընկերություններին ժամանակակից, հուսալի և բարձր արդյունավետությամբ օժտված ռոբոտացված լուծումներով։ Մենք ձգտում ենք դարձնել արտադրական պրոցեսները ավելի անվտանգ, արագ և էներգախնայող։</p>
-          </div>
-          <div class="card">
-            <img src="img/8.png" alt="Hardware Testing" class="card-img">
-            <h3>🔬 Տեխնոլոգիական Բազան & R&D</h3>
-            <p>Մեր լաբորատորիայում իրականացվում է 3D CAD մեխանիկական նախագծում, PCB layout Altium Designer-ով և embedded ծրագրավորում C/C++ ու Verilog լեզուներով։ Մենք ունենք սեփական CNC մշակման և տպասալիկների պատրաստման ու թեստավորման հանգույցներ։</p>
-          </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3 data-i18n="about_iso_title">🛡️ Որակի Ստանդարտներ & ISO</h3>
+          <p data-i18n="about_iso_desc">Մեր կողմից արտադրվող բոլոր էլեկտրոնային սալիկներն ու ռոբոտացված մեխանիզմներն անցնում են էլեկտրամագնիսական համատեղելիության (EMC), ջերմաստիճանային shock-test-երի (-30°C - +65°C) և IP67 խոնավապաշտպանության փորձարկումներ։</p>
         </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>🛡️ Որակի Ստանդարտներ & ISO</h3>
-            <p>Մեր կողմից արտադրվող բոլոր էլեկտրոնային սալիկներն ու ռոբոտացված մեխանիզմներն անցնում են էլեկտրամագնիսական համատեղելիության (EMC), ջերմաստիճանային shock-test-երի (-30°C - +65°C) և IP67 խոնավապաշտպանության փորձարկումներ։</p>
-          </div>
-          <div class="card">
-            <h3>🤝 Ռազմավարական Գործընկերություն</h3>
-            <p>Մենք համագործակցում ենք տարածաշրջանի խոշորագույն արևային ֆերմաների, արտադրական գործարանների և տեխնոլոգիական կենտրոնների հետ՝ ապահովելով անհատական ինժեներական մոտեցում յուրաքանչյուր նախագծին։</p>
-          </div>
-        </div>
-
-        <h2 class="section-title" style="margin-top: 60px;">Մեր Աշխատանքային Փուլերը (Roadmap)</h2>
-        <div class="grid-4" style="margin-top: 30px;">
-          <div class="card">
-            <div class="step-number">01</div>
-            <h3>Տեխնիկական Առաջադրանք</h3>
-            <p>Խնդրի խորքային վերլուծություն, չափագրումներ, պահանջների հավաքագրում և ROI հաշվարկ։</p>
-          </div>
-          <div class="card">
-            <div class="step-number">02</div>
-            <h3>3D CAD & PCB Layout</h3>
-            <p>Մեխանիկական կառուցվածքի 3D մոդելավորում և էլեկտրոնային սալիկների նախագծում Altium-ով։</p>
-          </div>
-          <div class="card">
-            <div class="step-number">03</div>
-            <h3>Prototyping & Testing</h3>
-            <p>Պրոտոտիպի պատրաստում, Embedded firmware-ի գրում և լաբորատոր փորձարկումներ։</p>
-          </div>
-          <div class="card">
-            <div class="step-number">04</div>
-            <h3>Deployment & Support</h3>
-            <p>Տեղադրում օբյեկտում, SCADA ինտեգրում, անձնակազմի ուսուցում և 24/7 երաշխիքային սպասարկում։</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-
-  <main id="page-solar" class="page-view">
-    <section class="hero" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-tag">ՄԱՍՆԱԳԻՏԱՑՎԱԾ ՈՒՂՂՈՒԹՅՈՒՆ</span>
-          <h1>ԱՐԵՎԱՅԻՆ ԿԱՅԱՆՆԵՐԻ ՌՈԲՈՏԱՑՎԱԾ ՄԱՔՐՈՒՄ ԵՎ ՄՈՆԻՏՈՐԻՆԳ</h1>
-          <p>MGG Systems-ի ռոբոտացված լուծումներն ապահովում են պանելների կատարյալ մաքրություն՝ վերականգնելով էներգիայի արտադրողականությունը։</p>
+        <div class="card">
+          <h3 data-i18n="about_partner_title">🤝 Ռազմավարական Գործընկերություն</h3>
+          <p data-i18n="about_partner_desc">Մենք համագործակցում ենք տարածաշրջանի խոշորագույն արևային ֆերմաների, արտադրական գործարանների և տեխնոլոգիական կենտրոնների հետ՝ ապահովելով անհատական ինժեներական մոտեցում յուրաքանչյուր նախագծին։</p>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Արևային Ռոբոտացված Մոդելների Շարք</h2>
-        <p class="section-subtitle">Մենք առաջարկում ենք ինչպես ստանդարտ, այնպես էլ custom պատվերով պատրաստվող ռոբոտացված համակարգեր։</p>
+      <h2 class="section-title" style="margin-top: 60px;" data-i18n="about_roadmap_title">Մեր Աշխատանքային Փուլերը (Roadmap)</h2>
+      <div class="grid-4" style="margin-top: 30px;">
+        <div class="card">
+          <div class="step-number">01</div>
+          <h3 data-i18n="step_1_title">Տեխնիկական Առաջադրանք</h3>
+          <p data-i18n="step_1_desc">Խնդրի խորքային վերլուծություն, չափագրումներ, պահանջների հավաքագրում և ROI հաշվարկ։</p>
+        </div>
+        <div class="card">
+          <div class="step-number">02</div>
+          <h3 data-i18n="step_2_title">3D CAD & PCB Layout</h3>
+          <p data-i18n="step_2_desc">Մեխանիկական կառուցվածքի 3D մոդելավորում և էլեկտրոնային սալիկների նախագծում Altium-ով։</p>
+        </div>
+        <div class="card">
+          <div class="step-number">03</div>
+          <h3 data-i18n="step_3_title">Prototyping & Testing</h3>
+          <p data-i18n="step_3_desc">Պրոտոտիպի պատրաստում, Embedded firmware-ի գրում և լաբորատոր փորձարկումներ։</p>
+        </div>
+        <div class="card">
+          <div class="step-number">04</div>
+          <h3 data-i18n="step_4_title">Deployment & Support</h3>
+          <p data-i18n="step_4_desc">Տեղադրում օբյեկտում, SCADA ինտեգրում, անձնակազմի ուսուցում և 24/7 երաշխիքային սպասարկում։</p>
+        </div>
+      </div>
 
-        <div class="grid-3" style="margin-bottom: 60px;">
-          <div class="card">
-            <img src="img/1.png" alt="MGG Stationary Clean Robot" class="card-img">
-            <span class="badge">Utility Scale</span>
-            <h3>Stationary Clean Pro</h3>
-            <p>Ռելսային անխափան ավտոմատացված համակարգ՝ ինքնալիցքավորվող մարտկոցով խոշոր արևային ֆերմաների համար։</p>
-            <ul>
-              <li>Ավտոնոմ չոր մաքրում micro-fiber խոզանակով</li>
-              <li>LoRa/RS485 հեռակա ղեկավարում</li>
-            </ul>
-          </div>
+    </div>
+  </section>
+</main>
+<main id="page-solar" class="page-view">
+  <section class="hero" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="sol_hero_tag">ՄԱՍՆԱԳԻՏԱՑՎԱԾ ՈՒՂՂՈՒԹՅՈՒՆ</span>
+        <h1 data-i18n="sol_hero_title">ԱՐԵՎԱՅԻՆ ԿԱՅԱՆՆԵՐԻ ՌՈԲՈՏԱՑՎԱԾ ՄԱՔՐՈՒՄ ԵՎ ՄՈՆԻՏՈՐԻՆԳ</h1>
+        <p data-i18n="sol_hero_desc">MGG Systems-ի ռոբոտացված լուծումներն ապահովում են պանելների կատարյալ մաքրություն՝ վերականգնելով էներգիայի արտադրողականությունը։</p>
+      </div>
+    </div>
+  </section>
 
-          <div class="card">
-            <img src="img/1.png" alt="Portable Solar Robot" class="card-img">
-            <span class="badge">Rooftop Commercial</span>
-            <h3>Portable Mobile Clean</h3>
-            <p>Թեթև քաշով (18 կգ) տեղափոխվող ռոբոտ՝ տանիքային և փոքր/միջին կայանների համար։</p>
-            <ul>
-              <li>Ռեզինե թրթուրավոր ընթացք (no-slip tracks)</li>
-              <li>Distance/Edge optical sensors</li>
-            </ul>
-          </div>
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="sol_models_title">Արևային Ռոբոտացված Մոդելների Շարք</h2>
+      <p class="section-subtitle" data-i18n="sol_models_subtitle">Մենք առաջարկում ենք ինչպես ստանդարտ, այնպես էլ custom պատվերով պատրաստվող ռոբոտացված համակարգեր։</p>
 
-          <div class="card">
-            <img src="img/1.png" alt="Custom Solar Setup" class="card-img">
-            <span class="badge">Custom Setup</span>
-            <h3>Industrial Custom Track</h3>
-            <p>Անհատական ինժեներական նախագծում բարդ տեղանքով և խոշոր արդյունաբերական կայանների համար։</p>
-            <ul>
-              <li>Մինչև 40° թեքության անկյան հաղթահարում</li>
-              <li>IP67 heavy-duty waterproof housing</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <img src="img/1.png" alt="Solar Robot Water Hybrid" class="card-img">
-            <span class="badge">Hybrid Wash</span>
-            <h3>Hydro-Clean Hybrid Robot</h3>
-            <p>Հիբրիդային ռոբոտ՝ ճնշումային ջրային ցողիչներով և չոր խոզանակով կոշտ աղտոտվածության համար։</p>
-            <ul>
-              <li>Low-water consumption nozzles</li>
-              <li>Dual-brush counter-rotation system</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <img src="img/1.png" alt="Autonomous Solar Fleet" class="card-img">
-            <span class="badge">Autonomous Fleet</span>
-            <h3>Multi-Robot Fleet Docking System</h3>
-            <p>Բազմառոբոտ համակարգ կենտրոնական լիցքավորման կայանով խոշոր 10MW+ ֆերմաների համար։</p>
-            <ul>
-              <li>Central Docking station with Auto-Charging</li>
-              <li>Scheduled daily cleaning programs</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <img src="img/1.png" alt="Thermal Solar Diagnostic" class="card-img">
-            <span class="badge">AI Diagnostics</span>
-            <h3>Solar Thermal & Dust Inspector</h3>
-            <p>Անօդաչու/ռոբոտացված ինսպեկցիոն սարք՝ թերմալ տեսախցիկով պանելների hot-spot-երը հայտնաբերելու համար։</p>
-            <ul>
-              <li>Thermal IR camera inspection</li>
-              <li>Automated fault reporting via Cloud</li>
-            </ul>
-          </div>
+      <div class="grid-3" style="margin-bottom: 60px;">
+        <div class="card">
+          <img src="img/1.png" alt="MGG Stationary Clean Robot" class="card-img">
+          <span class="badge">Utility Scale</span>
+          <h3>Stationary Clean Pro</h3>
+          <p data-i18n="sol_m1_desc">Ռելսային անխափան ավտոմատացված համակարգ՝ ինքնալիցքավորվող մարտկոցով խոշոր արևային ֆերմաների համար։</p>
+          <ul>
+            <li data-i18n="sol_m1_f1">Ավտոնոմ չոր մաքրում micro-fiber խոզանակով</li>
+            <li data-i18n="sol_m1_f2">LoRa/RS485 հեռակա ղեկավարում</li>
+          </ul>
         </div>
 
-        <h2 class="section-title">Չոր Մաքրում vs Ջրով Լվացում</h2>
-        <div class="table-container" style="margin-bottom: 50px;">
-          <table>
-            <thead>
-              <tr>
-                <th>Պարամետր</th>
-                <th>MGG Dry Cleaning Robot</th>
-                <th>Ավանդական Ջրով Լվացում</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Ջրի Ծախս</strong></td>
-                <td>0 Լիտր (100% Խնայողություն)</td>
-                <td>3-5 Լիտր / մ² (Մեծ ծախս)</td>
-              </tr>
-              <tr>
-                <td><strong>ՕԳԳ-ի Վերականգնում</strong></td>
-                <td>մինչև 99.2%</td>
-                <td>85-90% (Ջրային բծերի պատճառով)</td>
-              </tr>
-              <tr>
-                <td><strong>Աշխատանքային Ջերմաստիճան</strong></td>
-                <td>-25°C-ից +60°C (Ցանկացած եղանակի)</td>
-                <td>Միայն առավոտյան / երեկոյան (ջերմային շոկի ռիսկ)</td>
-              </tr>
-              <tr>
-                <td><strong>Մարդկային Աշխատուժ</strong></td>
-                <td>100% Ավտոմատացված / 1 օպերատոր</td>
-                <td>4-8 աշխատակից</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="card">
+          <img src="img/1.png" alt="Portable Solar Robot" class="card-img">
+          <span class="badge">Rooftop Commercial</span>
+          <h3>Portable Mobile Clean</h3>
+          <p data-i18n="sol_m2_desc">Թեթև քաշով (18 կգ) տեղափոխվող ռոբոտ՝ տանիքային և փոքր/միջին կայանների համար։</p>
+          <ul>
+            <li data-i18n="sol_m2_f1">Ռեզինե թրթուրավոր ընթացք (no-slip tracks)</li>
+            <li data-i18n="sol_m2_f2">Distance/Edge optical sensors</li>
+          </ul>
         </div>
 
-        <div class="calc-box">
-          <h2 class="section-title" style="margin-bottom: 8px;">Արդյունավետության & ROI Հաշվիչ</h2>
-          <div class="calc-grid">
-            <div>
-              <div class="calc-input-group">
-                <label>Կայանի Հզորությունը (կՎտ/kW):</label>
-                <input type="number" id="calc-power" value="100" min="10" step="10">
-              </div>
-              <div class="calc-input-group">
-                <label>Էլ․ էներգիայի սակագինը (դրամ / կՎտժ):</label>
-                <input type="number" id="calc-tariff" value="45">
-              </div>
-              <div class="calc-input-group">
-                <label>Փոշոտվածության պատճառով կորուստ (%):</label>
-                <input type="number" id="calc-loss" value="15" min="5" max="35">
-              </div>
+        <div class="card">
+          <img src="img/1.png" alt="Custom Solar Setup" class="card-img">
+          <span class="badge">Custom Setup</span>
+          <h3>Industrial Custom Track</h3>
+          <p data-i18n="sol_m3_desc">Անհատական ինժեներական նախագծում բարդ տեղանքով և խոշոր արդյունաբերական կայանների համար։</p>
+          <ul>
+            <li data-i18n="sol_m3_f1">Մինչև 40° թեքության անկյան հաղթահարում</li>
+            <li data-i18n="sol_m3_f2">IP67 heavy-duty waterproof housing</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <img src="img/1.png" alt="Solar Robot Water Hybrid" class="card-img">
+          <span class="badge">Hybrid Wash</span>
+          <h3>Hydro-Clean Hybrid Robot</h3>
+          <p data-i18n="sol_m4_desc">Հիբրիդային ռոբոտ՝ ճնշումային ջրային ցողիչներով և չոր խոզանակով կոշտ աղտոտվածության համար։</p>
+          <ul>
+            <li data-i18n="sol_m4_f1">Low-water consumption nozzles</li>
+            <li data-i18n="sol_m4_f2">Dual-brush counter-rotation system</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <img src="img/1.png" alt="Autonomous Solar Fleet" class="card-img">
+          <span class="badge">Autonomous Fleet</span>
+          <h3>Multi-Robot Fleet Docking System</h3>
+          <p data-i18n="sol_m5_desc">Բազմառոբոտ համակարգ կենտրոնական լիցքավորման կայանով խոշոր 10MW+ ֆերմաների համար։</p>
+          <ul>
+            <li data-i18n="sol_m5_f1">Central Docking station with Auto-Charging</li>
+            <li data-i18n="sol_m5_f2">Scheduled daily cleaning programs</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <img src="img/1.png" alt="Thermal Solar Diagnostic" class="card-img">
+          <span class="badge">AI Diagnostics</span>
+          <h3>Solar Thermal & Dust Inspector</h3>
+          <p data-i18n="sol_m6_desc">Անօդաչու/ռոբոտացված ինսպեկցիոն սարք՝ թերմալ տեսախցիկով պանելների hot-spot-երը հայտնաբերելու համար։</p>
+          <ul>
+            <li data-i18n="sol_m6_f1">Thermal IR camera inspection</li>
+            <li data-i18n="sol_m6_f2">Automated fault reporting via Cloud</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title" data-i18n="sol_cmp_title">Չոր Մաքրում vs Ջրով Լվացում</h2>
+      <div class="table-container" style="margin-bottom: 50px;">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="sol_th_param">Պարամետր</th>
+              <th data-i18n="sol_th_mgg">MGG Dry Cleaning Robot</th>
+              <th data-i18n="sol_th_trad">Ավանդական Ջրով Լվացում</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong data-i18n="sol_tr1_param">Ջրի Ծախս</strong></td>
+              <td data-i18n="sol_tr1_mgg">0 Լիտր (100% Խնայողություն)</td>
+              <td data-i18n="sol_tr1_trad">3-5 Լիտր / մ² (Մեծ ծախս)</td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="sol_tr2_param">ՕԳԳ-ի Վերականգնում</strong></td>
+              <td data-i18n="sol_tr2_mgg">մինչև 99.2%</td>
+              <td data-i18n="sol_tr2_trad">85-90% (Ջրային բծերի պատճառով)</td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="sol_tr3_param">Աշխատանքային Ջերմաստիճան</strong></td>
+              <td data-i18n="sol_tr3_mgg">-25°C-ից +60°C (Ցանկացած եղանակի)</td>
+              <td data-i18n="sol_tr3_trad">Միայն առավոտյան / երեկոյան (ջերմային շոկի ռիսկ)</td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="sol_tr4_param">Մարդկային Աշխատուժ</strong></td>
+              <td data-i18n="sol_tr4_mgg">100% Ավտոմատացված / 1 օպերատոր</td>
+              <td data-i18n="sol_tr4_trad">4-8 աշխատակից</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="calc-box">
+        <h2 class="section-title" style="margin-bottom: 8px;" data-i18n="sol_calc_title">Արդյունավետության & ROI Հաշվիչ</h2>
+        <div class="calc-grid">
+          <div>
+            <div class="calc-input-group">
+              <label data-i18n="sol_calc_lbl_power">Կայանի Հզորությունը (կՎտ/kW):</label>
+              <input type="number" id="calc-power" value="100" min="10" step="10">
             </div>
-
-            <div class="calc-result">
-              <span>Տարեկան Վերականգնվող Օգուտը.</span>
-              <div class="calc-result-number" id="calc-output">708,750 ֏</div>
-              <span id="calc-output-monthly" style="color: #38bdf8; font-weight: bold;">(~59,062 ֏ / ամիս)</span>
+            <div class="calc-input-group">
+              <label data-i18n="sol_calc_lbl_tariff">Էլ․ էներգիայի սակագինը (դրամ / կՎտժ):</label>
+              <input type="number" id="calc-tariff" value="45">
+            </div>
+            <div class="calc-input-group">
+              <label data-i18n="sol_calc_lbl_loss">Փոշոտվածության պատճառով կորուստ (%):</label>
+              <input type="number" id="calc-loss" value="15" min="5" max="35">
             </div>
           </div>
-        </div>
 
-      </div>
-    </section>
-  </main>
-
-
-  <main id="page-automation" class="page-view">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-tag">INDUSTRIAL AUTOMATION & CONTROL SYSTEMS</span>
-          <h1>ԱՐԴՅՈՒՆԱԲԵՐԱԿԱՆ ԱՎՏՈՄԱՏԱՑՈՒՄ (PLC, SCADA, HMI, IoT)</h1>
-          <p>Մենք իրականացնում ենք արտադրական պրոցեսների, հոսքագծերի, պոմպակայանների և էներգետիկ հանգույցների ավտոմատացում։</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Ավտոմատացման 6 Հիմնական Մոդուլները</h2>
-        <div class="grid-3" style="margin-bottom: 50px;">
-          <div class="card">
-            <h3>⚙️ PLC Ծրագրավորում (Siemens, Schneider)</h3>
-            <p>Siemens S7-1200/1500, Schneider Modicon, Delta, Allen Bradley PLC-ների ծրագրավորում Ladder, FBD, SCL լեզուներով։</p>
-          </div>
-          <div class="card">
-            <h3>🖥️ SCADA & HMI Ինտերֆեյսներ</h3>
-            <p>Siemens WinCC, Ignition, Wonderware SCADA դիսպետչերական համակարգեր real-time trend-երով և վթարային ազդանշաններով։</p>
-          </div>
-          <div class="card">
-            <h3>⚡ VFD & Servo Motion Control</h3>
-            <p>Հաճախականային կարգավորիչների (VFD) և Servo շարժիչների ղեկավարում՝ ճշգրիտ դիրքավորման ու էներգախնայողության համար։</p>
-          </div>
-          <div class="card">
-            <h3>🎛️ Էլեկտրական Վահանների Հավաքում</h3>
-            <p>Արդյունաբերական ղեկավարման վահանների (Control Cabinets) նախագծում և հավաքում՝ IP65/IP67 չափանիշներով։</p>
-          </div>
-          <div class="card">
-            <h3>📡 Modbus / Profinet / CAN Networks</h3>
-            <p>Արդյունաբերական ցանցային պրոտոկոլների կարգավորում, տվյալների անխափան փոխանցում սենսորներից դեպի սերվեր։</p>
-          </div>
-          <div class="card">
-            <h3>🚨 Safety Systems & Interlocks</h3>
-            <p>Վթարային կանգի, անվտանգության լազերային արգելապատնեշների և hardware interlock-երի ինտեգրում։</p>
+          <div class="calc-result">
+            <span data-i18n="sol_calc_lbl_result">Տարեկան Վերականգնվող Օգուտը.</span>
+            <div class="calc-result-number" id="calc-output">708,750 ֏</div>
+            <span id="calc-output-monthly" style="color: #38bdf8; font-weight: bold;">(~59,062 ֏ / ամիս)</span>
           </div>
         </div>
       </div>
-    </section>
-  </main>
 
+    </div>
+  </section>
+</main>
+<main id="page-automation" class="page-view">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="auto_hero_tag">INDUSTRIAL AUTOMATION & CONTROL SYSTEMS</span>
+        <h1 data-i18n="auto_hero_title">ԱՐԴՅՈՒՆԱԲԵՐԱԿԱՆ ԱՎՏՈՄԱՏԱՑՈՒՄ (PLC, SCADA, HMI, IoT)</h1>
+        <p data-i18n="auto_hero_desc">Մենք իրականացնում ենք արտադրական պրոցեսների, հոսքագծերի, պոմպակայանների և էներգետիկ հանգույցների ավտոմատացում։</p>
+      </div>
+    </div>
+  </section>
 
-  <main id="page-hardware" class="page-view">
-    <section class="hero" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-tag">EMBEDDED HARDWARE DESIGN</span>
-          <h1>CUSTOM ԷԼԵԿՏՐՈՆԱՅԻՆ ՍԱԼԻԿՆԵՐԻ (PCB) ՆԱԽԱԳԾՈՒՄ ԵՎ EMBEDDED ԾՐԱԳՐԱՎՈՒՄ</h1>
-          <p>Մենք մշակում ենք հատուկ ձեր նախագծի համար օպտիմալացված էլեկտրոնային սալիկներ (PCB) և ներդրված (Embedded) ծրագրակազմ։</p>
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="auto_modules_title">Ավտոմատացման 6 Հիմնական Մոդուլները</h2>
+      <div class="grid-3" style="margin-bottom: 50px;">
+        <div class="card">
+          <h3 data-i18n="auto_m1_title">⚙️ PLC Ծրագրավորում (Siemens, Schneider)</h3>
+          <p data-i18n="auto_m1_desc">Siemens S7-1200/1500, Schneider Modicon, Delta, Allen Bradley PLC-ների ծրագրավորում Ladder, FBD, SCL լեզուներով։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="auto_m2_title">🖥️ SCADA & HMI Ինտերֆեյսներ</h3>
+          <p data-i18n="auto_m2_desc">Siemens WinCC, Ignition, Wonderware SCADA դիսպետչերական համակարգեր real-time trend-երով և վթարային ազդանշաններով։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="auto_m3_title">⚡ VFD & Servo Motion Control</h3>
+          <p data-i18n="auto_m3_desc">Հաճախականային կարգավորիչների (VFD) և Servo շարժիչների ղեկավարում՝ ճշգրիտ դիրքավորման ու էներգախնայողության համար։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="auto_m4_title">🎛️ Էլեկտրական Վահանների Հավաքում</h3>
+          <p data-i18n="auto_m4_desc">Արդյունաբերական ղեկավարման վահանների (Control Cabinets) նախագծում և հավաքում՝ IP65/IP67 չափանիշներով։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="auto_m5_title">📡 Modbus / Profinet / CAN Networks</h3>
+          <p data-i18n="auto_m5_desc">Արդյունաբերական ցանցային պրոտոկոլների կարգավորում, տվյալների անխափան փոխանցում սենսորներից դեպի սերվեր։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="auto_m6_title">🚨 Safety Systems & Interlocks</h3>
+          <p data-i18n="auto_m6_desc">Վթարային կանգի, անվտանգության լազերային արգելապատնեշների և hardware interlock-երի ինտեգրում։</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Hardware Engineering Ուղղությունները</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>📐 Altium Designer Multilayer PCB</h3>
-            <p>1-ից 8 շերտանի բարդ տպասալիկների (PCB Layout) նախագծում High-Speed Routing-ով և Signal Integrity հաշվարկներով։</p>
-          </div>
-          <div class="card">
-            <h3>🧠 STM32 & ESP32 Microcontrollers</h3>
-            <p>ARM Cortex-M0/M4/M7 և ESP32 հենքով ներդրված համակարգերի (Embedded C/C++) ծրագրավորում Real-Time OS (FreeRTOS) միջավայրում։</p>
-          </div>
-          <div class="card">
-            <h3>📡 FPGA RTL Design (Verilog)</h3>
-            <p>Xilinx/Intel FPGA-ների վրա թվային տրամաբանության մշակում Verilog RTL լեզվով ultra-fast DSP ազդանշանների մշակման համար։</p>
-          </div>
-          <div class="card">
-            <h3>🔋 Power Electronics & BLDC Drivers</h3>
-            <p>Բարձր հզորության MOSFET/IGBT H-Bridge դրայվերների, DC-DC converter-ների և LiFePO4 BMS սալիկների նախագծում։</p>
-          </div>
-          <div class="card">
-            <h3>🌐 Wireless Interfaces (LoRa, CAN, RS485)</h3>
-            <p>LoRaWAN, Wi-Fi, Bluetooth LE, Isolated CAN Bus և RS485 Modbus ինտերֆեյսների hardware ինտեգրում։</p>
-          </div>
-          <div class="card">
-            <h3>🛠️ Rapid Prototyping & Assembly</h3>
-            <p>SMD/THD էլեկտրոնային բաղադրիչների մոնտաժում, stencil printing, reflow soldering և oscilloscope testing։</p>
-          </div>
+<main id="page-hardware" class="page-view">
+  <section class="hero" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="hw_hero_tag">EMBEDDED HARDWARE DESIGN</span>
+        <h1 data-i18n="hw_hero_title">CUSTOM ԷԼԵԿՏՐՈՆԱՅԻՆ ՍԱԼԻԿՆԵՐԻ (PCB) ՆԱԽԱԳԾՈՒՄ ԵՎ EMBEDDED ԾՐԱԳՐԱՎՈՒՄ</h1>
+        <p data-i18n="hw_hero_desc">Մենք մշակում ենք հատուկ ձեր նախագծի համար օպտիմալացված էլեկտրոնային սալիկներ (PCB) և ներդրված (Embedded) ծրագրակազմ։</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="hw_directions_title">Hardware Engineering Ուղղությունները</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3 data-i18n="hw_d1_title">📐 Altium Designer Multilayer PCB</h3>
+          <p data-i18n="hw_d1_desc">1-ից 8 շերտանի բարդ տպասալիկների (PCB Layout) նախագծում High-Speed Routing-ով և Signal Integrity հաշվարկներով։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="hw_d2_title">🧠 STM32 & ESP32 Microcontrollers</h3>
+          <p data-i18n="hw_d2_desc">ARM Cortex-M0/M4/M7 և ESP32 հենքով ներդրված համակարգերի (Embedded C/C++) ծրագրավորում Real-Time OS (FreeRTOS) միջավայրում։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="hw_d3_title">📡 FPGA RTL Design (Verilog)</h3>
+          <p data-i18n="hw_d3_desc">Xilinx/Intel FPGA-ների վրա թվային տրամաբանության մշակում Verilog RTL լեզվով ultra-fast DSP ազդանշանների մշակման համար։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="hw_d4_title">🔋 Power Electronics & BLDC Drivers</h3>
+          <p data-i18n="hw_d4_desc">Բարձր հզորության MOSFET/IGBT H-Bridge դրայվերների, DC-DC converter-ների և LiFePO4 BMS սալիկների նախագծում։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="hw_d5_title">🌐 Wireless Interfaces (LoRa, CAN, RS485)</h3>
+          <p data-i18n="hw_d5_desc">LoRaWAN, Wi-Fi, Bluetooth LE, Isolated CAN Bus և RS485 Modbus ինտերֆեյսների hardware ինտեգրում։</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="hw_d6_title">🛠️ Rapid Prototyping & Assembly</h3>
+          <p data-i18n="hw_d6_desc">SMD/THD էլեկտրոնային բաղադրիչների մոնտաժում, stencil printing, reflow soldering և oscilloscope testing։</p>
         </div>
       </div>
-    </section>
-  </main>
-
-
-  <main id="page-projects" class="page-view">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-tag">PORTFOLIO & CASE STUDIES</span>
-          <h1>ԻՐԱԿԱՆԱՑՎԱԾ ՆԱԽԱԳԾԵՐ ԵՎ ԻՆԺԵՆԵՐԱԿԱՆ ԼՈՒԾՈՒՄՆԵՐ</h1>
-          <p>Սեղմեք ցանկացած նախագծի վրա՝ դրա ամբողջական տեխնիկական նկարագրությանը, չափանիշներին և ճարտարապետությանը ծանոթանալու համար։</p>
-        </div>
+    </div>
+  </section>
+</main>
+<main id="page-projects" class="page-view">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="proj_hero_tag">PORTFOLIO & CASE STUDIES</span>
+        <h1 data-i18n="proj_hero_title">ԻՐԱԿԱՆԱՑՎԱԾ ՆԱԽԱԳԾԵՐ ԵՎ ԻՆԺԵՆԵՐԱԿԱՆ ԼՈՒԾՈՒՄՆԵՐ</h1>
+        <p data-i18n="proj_hero_desc">Սեղմեք ցանկացած նախագծի վրա՝ դրա ամբողջական տեխնիկական նկարագրությանը, չափանիշներին և ճարտարապետությանը ծանոթանալու համար։</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="grid-3">
-          
-          <div class="card" onclick="openProjectDetail('solar-robot')" style="cursor: pointer;">
-            <img src="img/1.png" alt="MGG Solar Cleaning Robot" class="card-img">
-            <span class="badge">Solar Robotics</span>
-            <h3>☀️ MGG Solar Clean Robot Platform</h3>
-            <p>Արևային ֆերմաների համար ռելսային ավտոմատացված մաքրման ռոբոտացված համակարգ՝ ինքնալիցքավորման կայանով։</p>
-            <ul>
-              <li>Մաքրվող տարածք՝ 10,000+ մ²</li>
-              <li>Արտադրողականության աճ՝ +24%</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('agv-robot')" style="cursor: pointer;">
-            <img src="img/4.png" alt="AGV Robot Track" class="card-img">
-            <span class="badge">Robotics</span>
-            <h3>🤖 Custom Track Automation Platform (AGV)</h3>
-            <p>Արտադրական տարածքում ծանր բեռների ավտոմատացված տեղափոխման ռոբոտացված պլատֆորմ։</p>
-            <ul>
-              <li>Բեռնատարողություն՝ 500 կգ</li>
-              <li>Լազերային նավիգացիա & Obstacle Avoidance</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('scada-pump')" style="cursor: pointer;">
-            <img src="img/2.png" alt="PLC Cabinet Unit" class="card-img">
-            <span class="badge">SCADA & Automation</span>
-            <h3>⚡ HMI & SCADA Dispatching Unit</h3>
-            <p>Արդյունաբերական պոմպակայանի հեռակա դիսպետչերական ղեկավարման համակարգ Siemens PLC հենքով։</p>
-            <ul>
-              <li>RS485/Modbus RTU ցանց</li>
-              <li>Real-time graphical HMI interface</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('motor-driver')" style="cursor: pointer;">
-            <img src="img/3.png" alt="Custom Motor Board" class="card-img">
-            <span class="badge">Custom PCB</span>
-            <h3>🔬 Custom BLDC Motor Controller Board</h3>
-            <p>Քայլային (Stepper) և BLDC շարժիչների ղեկավարման բարձր հզորության էլեկտրոնային սալիկ (STM32/CAN):</p>
-            <ul>
-              <li>4-Layer Board Design (Altium)</li>
-              <li>CAN Bus / Isolated RS485 Interface</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('fpga-dsp')" style="cursor: pointer;">
-            <img src="img/6.png" alt="FPGA Signal Processor" class="card-img">
-            <span class="badge">FPGA / Digital Logic</span>
-            <h3>📡 High-Speed Signal Processor</h3>
-            <p>Xilinx FPGA-ի վրա հիմնված թվային ազդանշանային մշակման սալիկ՝ բարձր հաճախականության տվյալների հավաքագրման համար։</p>
-            <ul>
-              <li>Verilog RTL Design</li>
-              <li>Ultra-low Latency processing</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('smart-agro')" style="cursor: pointer;">
-            <img src="img/5.png" alt="Smart IoT Controller" class="card-img">
-            <span class="badge">IoT System</span>
-            <h3>🌐 Smart Agro Climate Monitor</h3>
-            <p>Ջերմոցային համալիրների կլիմայի ավտոմատ հսկման IoT սարքավորումներ Cloud dashboard ինտեգրմամբ։</p>
-            <ul>
-              <li>ESP32 / Wi-Fi / LoRa connectivity</li>
-              <li>MQTT Protocol Integration</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('bms-battery')" style="cursor: pointer;">
-            <img src="img/2.png" alt="BMS Battery Management" class="card-img">
-            <span class="badge">Power Electronics</span>
-            <h3>🔋 Industrial LiFePO4 Smart BMS Controller</h3>
-            <p>48V 100Ah LiFePO4 մարտկոցային բլոկների ինտելեկտուալ BMS համակարգ հավասարակշռմամբ (Active Balancing):</p>
-            <ul>
-              <li>High-precision cell monitoring</li>
-              <li>CAN bus / Modbus RTU telemetry</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('conveyor-plc')" style="cursor: pointer;">
-            <img src="img/3.png" alt="Conveyor Automation" class="card-img">
-            <span class="badge">Factory Automation</span>
-            <h3>🏭 High-Speed Bottling Conveyor Automation</h3>
-            <p>Ըմպելիքների լցնման ավտոմատացված հոսքագծի ղեկավարում Schneider Modicon PLC-ի և optical sensor-ների միջոցով։</p>
-            <ul>
-              <li>12,000 շիշ/ժամ արտադրողականություն</li>
-              <li>Automated defect rejection mechanism</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
-          <div class="card" onclick="openProjectDetail('rooftop-cleaner')" style="cursor: pointer;">
-            <img src="img/6.png" alt="Rooftop Solar Robot" class="card-img">
-            <span class="badge">Rooftop Solar</span>
-            <h3>🏢 Commercial Rooftop Lightweight Cleaner</h3>
-            <p>Կոմերցիոն շենքերի տանիքների արևային պանելների համար նախատեսված ultra-lightweight (15կգ) ռոբոտ։</p>
-            <ul>
-              <li>Wireless Remote Control</li>
-              <li>Compact transportable frame</li>
-            </ul>
-            <p style="color: var(--primary); font-weight: 700; margin-top: 20px;">Դիտել Մանրամասն ➔</p>
-          </div>
-
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
         
-
+        <div class="card" onclick="openProjectDetail('solar-robot')" style="cursor: pointer;">
+          <img src="img/1.png" alt="MGG Solar Cleaning Robot" class="card-img">
+          <span class="badge">Solar Robotics</span>
+          <h3 data-i18n="p1_title">☀️ MGG Solar Clean Robot Platform</h3>
+          <p data-i18n="p1_desc">Արևային ֆերմաների համար ռելսային ավտոմատացված մաքրման ռոբոտացված համակարգ՝ ինքնալիցքավորման կայանով։</p>
+          <ul>
+            <li data-i18n="p1_f1">Մաքրվող տարածք՝ 10,000+ մ²</li>
+            <li data-i18n="p1_f2">Արտադրողականության աճ՝ +24%</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
         </div>
+
+        <div class="card" onclick="openProjectDetail('agv-robot')" style="cursor: pointer;">
+          <img src="img/4.png" alt="AGV Robot Track" class="card-img">
+          <span class="badge">Robotics</span>
+          <h3 data-i18n="p2_title">🤖 Custom Track Automation Platform (AGV)</h3>
+          <p data-i18n="p2_desc">Արտադրական տարածքում ծանր բեռների ավտոմատացված տեղափոխման ռոբոտացված պլատֆորմ։</p>
+          <ul>
+            <li data-i18n="p2_f1">Բեռնատարողություն՝ 500 կգ</li>
+            <li data-i18n="p2_f2">Լազերային նավիգացիա & Obstacle Avoidance</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
+        <div class="card" onclick="openProjectDetail('scada-pump')" style="cursor: pointer;">
+          <img src="img/2.png" alt="PLC Cabinet Unit" class="card-img">
+          <span class="badge">SCADA & Automation</span>
+          <h3 data-i18n="p3_title">⚡ HMI & SCADA Dispatching Unit</h3>
+          <p data-i18n="p3_desc">Արդյունաբերական պոմպակայանի հեռակա դիսպետչերական ղեկավարման համակարգ Siemens PLC հենքով։</p>
+          <ul>
+            <li data-i18n="p3_f1">RS485/Modbus RTU ցանց</li>
+            <li data-i18n="p3_f2">Real-time graphical HMI interface</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
+        <div class="card" onclick="openProjectDetail('motor-driver')" style="cursor: pointer;">
+          <img src="img/3.png" alt="Custom Motor Board" class="card-img">
+          <span class="badge">Custom PCB</span>
+          <h3 data-i18n="p4_title">🔬 Custom BLDC Motor Controller Board</h3>
+          <p data-i18n="p4_desc">Քայլային (Stepper) և BLDC շարժիչների ղեկավարման բարձր հզորության էլեկտրոնային սալիկ (STM32/CAN):</p>
+          <ul>
+            <li data-i18n="p4_f1">4-Layer Board Design (Altium)</li>
+            <li data-i18n="p4_f2">CAN Bus / Isolated RS485 Interface</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
+        <div class="card" onclick="openProjectDetail('fpga-dsp')" style="cursor: pointer;">
+          <img src="img/6.png" alt="FPGA Signal Processor" class="card-img">
+          <span class="badge">FPGA / Digital Logic</span>
+          <h3 data-i18n="p5_title">📡 High-Speed Signal Processor</h3>
+          <p data-i18n="p5_desc">Xilinx FPGA-ի վրա հիմնված թվային ազդանշանային մշակման սալիկ՝ բարձր հաճախականության տվյալների հավաքագրման համար։</p>
+          <ul>
+            <li data-i18n="p5_f1">Verilog RTL Design</li>
+            <li data-i18n="p5_f2">Ultra-low Latency processing</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
+        <div class="card" onclick="openProjectDetail('smart-agro')" style="cursor: pointer;">
+          <img src="img/5.png" alt="Smart IoT Controller" class="card-img">
+          <span class="badge">IoT System</span>
+          <h3 data-i18n="p6_title">🌐 Smart Agro Climate Monitor</h3>
+          <p data-i18n="p6_desc">Ջերմոցային համալիրների կլիմայի ավտոմատ հսկման IoT սարքավորումներ Cloud dashboard ինտեգրմամբ։</p>
+          <ul>
+            <li data-i18n="p6_f1">ESP32 / Wi-Fi / LoRa connectivity</li>
+            <li data-i18n="p6_f2">MQTT Protocol Integration</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
+        <div class="card" onclick="openProjectDetail('bms-battery')" style="cursor: pointer;">
+          <img src="img/2.png" alt="BMS Battery Management" class="card-img">
+          <span class="badge">Power Electronics</span>
+          <h3 data-i18n="p7_title">🔋 Industrial LiFePO4 Smart BMS Controller</h3>
+          <p data-i18n="p7_desc">48V 100Ah LiFePO4 մարտկոցային բլոկների ինտելեկտուալ BMS համակարգ հավասարակշռմամբ (Active Balancing):</p>
+          <ul>
+            <li data-i18n="p7_f1">High-precision cell monitoring</li>
+            <li data-i18n="p7_f2">CAN bus / Modbus RTU telemetry</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
+        <div class="card" onclick="openProjectDetail('conveyor-plc')" style="cursor: pointer;">
+          <img src="img/3.png" alt="Conveyor Automation" class="card-img">
+          <span class="badge">Factory Automation</span>
+          <h3 data-i18n="p8_title">🏭 High-Speed Bottling Conveyor Automation</h3>
+          <p data-i18n="p8_desc">Ըմպելիքների լցնման ավտոմատացված հոսքագծի ղեկավարում Schneider Modicon PLC-ի և optical sensor-ների միջոցով։</p>
+          <ul>
+            <li data-i18n="p8_f1">12,000 շիշ/ժամ արտադրողականություն</li>
+            <li data-i18n="p8_f2">Automated defect rejection mechanism</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
+        <div class="card" onclick="openProjectDetail('rooftop-cleaner')" style="cursor: pointer;">
+          <img src="img/6.png" alt="Rooftop Solar Robot" class="card-img">
+          <span class="badge">Rooftop Solar</span>
+          <h3 data-i18n="p9_title">🏢 Commercial Rooftop Lightweight Cleaner</h3>
+          <p data-i18n="p9_desc">Կոմերցիոն շենքերի տանիքների արևային պանելների համար նախատեսված ultra-lightweight (15կգ) ռոբոտ։</p>
+          <ul>
+            <li data-i18n="p9_f1">Wireless Remote Control</li>
+            <li data-i18n="p9_f2">Compact transportable frame</li>
+          </ul>
+          <p style="color: var(--primary); font-weight: 700; margin-top: 20px;" data-i18n="view_detail">Դիտել Մանրամասն ➔</p>
+        </div>
+
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
+ <main id="page-project-detail" class="page-view">
+  <section class="section">
+    <div class="container">
+      <button onclick="showPage('projects')" class="btn-secondary" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 8px;" data-i18n="pd_back_btn">
+        ⬅️ Վերադառնալ Նախագծերին
+      </button>
 
-  <main id="page-project-detail" class="page-view">
-    <section class="section">
-      <div class="container">
-        <button onclick="showPage('projects')" class="btn-secondary" style="margin-bottom: 24px; display: inline-flex; align-items: center; gap: 8px;">
-          ⬅️ Վերադառնալ Նախագծերին
-        </button>
-
-        <div class="project-detail-header">
-          <span class="badge" id="pd-badge">Solar Robotics</span>
-          <h1 id="pd-title" style="font-size: 2.4rem; color: #0b1938; margin-bottom: 16px;">MGG Solar Clean Robot Platform</h1>
-          <p id="pd-subtitle" style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.7;">Արևային ֆերմաների համար ռելսային ավտոմատացված մաքրման ռոբոտացված համակարգ՝ ինքնալիցքավորման կայանով։</p>
-          
-          <div class="project-meta-grid">
-            <div class="project-meta-item">
-              <h5>Կարգավիճակ</h5>
-              <p id="pd-status">Հանձնված է / Գործող</p>
-            </div>
-            <div class="project-meta-item">
-              <h5>Ժամկետ</h5>
-              <p id="pd-duration">6 Շաբաթ</p>
-            </div>
-            <div class="project-meta-item">
-              <h5>Տեխնոլոգիաներ</h5>
-              <p id="pd-tech">STM32, RS485, LiFePO4, SolidWorks</p>
-            </div>
-            <div class="project-meta-item">
-              <h5>ՕԳԳ Աճ / ROI</h5>
-              <p id="pd-roi">+24% Էներգիայի Աճ</p>
-            </div>
+      <div class="project-detail-header">
+  <span class="badge" id="pd-badge" data-i18n="pdetail_badge">Solar Robotics</span>
+  <h1 id="pd-title" style="font-size: 2.4rem; color: #0b1938; margin-bottom: 16px;" data-i18n="pdetail_title">MGG Solar Clean Robot Platform</h1>
+  <p id="pd-subtitle" style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.7;" data-i18n="pdetail_subtitle">Արևային ֆերմաների համար ռելսային ավտոմատացված մաքրման ռոբոտացված համակարգ՝ ինքնալիցքավորման կայանով։</p>
+</div>
+       <div class="project-meta-grid">
+          <div class="project-meta-item">
+            <h5 data-i18n="pd_meta_status">Կարգավիճակ</h5>
+            <p id="pd-status">Հանձնված է / Գործող</p>
+          </div>
+          <div class="project-meta-item">
+            <h5 data-i18n="pd_meta_duration">Ժամկետ</h5>
+            <p id="pd-duration">6 Շաբաթ</p>
+          </div>
+          <div class="project-meta-item">
+            <h5 data-i18n="pd_meta_tech">Տեխնոլոգիաներ</h5>
+            <p id="pd-tech">STM32, RS485, LiFePO4, SolidWorks</p>
+          </div>
+          <div class="project-meta-item">
+            <h5 data-i18n="pd_meta_roi">ՕԳԳ Աճ / ROI</h5>
+            <p id="pd-roi">+24% Էներգիայի Աճ</p>
           </div>
         </div>
-
-        <img id="pd-image" src="img/1.png" alt="Project Image" class="project-detail-hero-img">
-
-        <div class="grid-2" style="margin-bottom: 40px;">
-          <div class="card">
-            <h3>📋 Նախագծի Խնդիրը & Մարտահրավերը</h3>
-            <p id="pd-problem">Արևային կայանում փոշու, ավազի և թռչունների աղտոտվածության պատճառով արտադրողականությունը նվազել էր 20-25%-ով։ Ձեռքով լվացումը թանկ էր և պահանջում էր մեծ քանակությամբ ջուր, որը տվյալ տարածաշրջանում սահմանափակ էր։</p>
-          </div>
-
-          <div class="card">
-            <h3>💡 Ինժեներական Լուծումը</h3>
-            <p id="pd-solution">MGG Systems-ը նախագծեց և պատրաստեց ավտոնոմ ռոբոտացված համակարգ, որն աշխատում է առանց ջրի (Dry Cleaning method)՝ հատուկ էլեկտրոստատիկ չոր խոզանակների միջոցով։ Ռոբոտը լիցքավորվում է իր սեփական արևային մարտկոցից և ունի IP67 ջրանցանիկ ու փոշեկայուն կորպուս։</p>
-          </div>
-        </div>
-
-        <h2 class="section-title">Մանրամասն Տեխնիկական Պարամետրեր</h2>
-        <div class="table-container" style="margin-bottom: 50px;">
-          <table>
-            <thead>
-              <tr>
-                <th>Հանգույց / Պարամետր</th>
-                <th>Մանրամասն Նկարագրություն</th>
-              </tr>
-            </thead>
-            <tbody id="pd-specs-body">
-              </tbody>
-          </table>
-        </div>
-
-        <div style="text-align: center; background: white; padding: 40px; border-radius: 16px; border: 1px solid var(--border-color);">
-          <h3 style="font-size: 1.5rem; color: #0b1938; margin-bottom: 12px;">Ցանկանո՞ւմ եք նմանատիպ լուծում ձեր օբյեկտի համար</h3>
-          <p style="color: var(--text-muted); margin-bottom: 24px;">Կապնվեք մեր ինժեներական թիմի հետ՝ անվճար տեխնիկական խորհրդատվություն և նախահաշիվ ստանալու համար։</p>
-          <button onclick="showPage('contact')" class="btn-primary">Պատվիրել Խորհրդատվություն ➔</button>
-        </div>
-
       </div>
-    </section>
-  </main>
 
+      <img id="pd-image" src="img/1.png" alt="Project Image" class="project-detail-hero-img">
 
-  <main id="page-faq" class="page-view">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-tag">QUESTIONS & ANSWERS</span>
-          <h1>ՀԱՃԱԽ ՏՐՎՈՂ ՀԱՐՑԵՐ (FAQ)</h1>
-          <p>Գտեք պատասխաններ մեր ծառայությունների, տեխնիկական երաշխիքների և համագործակցության վերաբերյալ։</p>
+      <div class="grid-2" style="margin-bottom: 40px;">
+        <div class="card">
+          <h3 data-i18n="pd_problem_title">📋 Նախագծի Խնդիրը & Մարտահրավերը</h3>
+          <p id="pd-problem">Արևային կայանում փոշու, ավազի և թռչունների աղտոտվածության պատճառով արտադրողականությունը նվազել էր 20-25%-ով։ Ձեռքով լվացումը թանկ էր և պահանջում էր մեծ քանակությամբ ջուր, որը տվյալ տարածաշրջանում սահմանափակ էր։</p>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="pd_solution_title">💡 Ինժեներական Լուծումը</h3>
+          <p id="pd-solution">MGG Systems-ը նախագծեց և պատրաստեց ավտոնոմ ռոբոտացված համակարգ, որն աշխատում է առանց ջրի (Dry Cleaning method)՝ հատուկ էլեկտրոստատիկ չոր խոզանակների միջոցով։ Ռոբոտը լիցքավորվում է իր սեփական արևային մարտկոցից և ունի IP67 ջրանցանիկ ու փոշեկայուն կորպուս։</p>
         </div>
       </div>
-    </section>
 
+      <h2 class="section-title" data-i18n="pd_specs_title">Մանրամասն Տեխնիկական Պարամետրեր</h2>
+      <div class="table-container" style="margin-bottom: 50px;">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="pd_table_h_param">Հանգույց / Պարամետր</th>
+              <th data-i18n="pd_table_h_desc">Մանրամասն Նկարագրություն</th>
+            </tr>
+          </thead>
+          <tbody id="pd-specs-body">
+          </tbody>
+        </table>
+      </div>
+
+      <div style="text-align: center; background: white; padding: 40px; border-radius: 16px; border: 1px solid var(--border-color);">
+        <h3 style="font-size: 1.5rem; color: #0b1938; margin-bottom: 12px;" data-i18n="pd_cta_title">Ցանկանո՞ւմ եք նմանատիպ լուծում ձեր օբյեկտի համար</h3>
+        <p style="color: var(--text-muted); margin-bottom: 24px;" data-i18n="pd_cta_desc">Կապնվեք մեր ինժեներական թիմի հետ՝ անվճար տեխնիկական խորհրդատվություն և նախահաշիվ ստանալու համար։</p>
+        <button onclick="showPage('contact')" class="btn-primary" data-i18n="pd_cta_btn">Պատվիրել Խորհրդատվություն ➔</button>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<main id="page-faq" class="page-view">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag" data-i18n="faq_hero_tag">QUESTIONS & ANSWERS</span>
+        <h1 data-i18n="faq_hero_title">ՀԱՃԱԽ ՏՐՎՈՂ ՀԱՐՑԵՐ (FAQ)</h1>
+        <p data-i18n="faq_hero_desc">Գտեք պատասխաններ մեր ծառայությունների, տեխնիկական երաշխիքների և համագործակցության վերաբերյալ։</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 950px;">
+      <div class="faq-item">
+        <h4 data-i18n="faq_q1">1. Որքա՞ն է պատվերի պատրաստման և ներդրման ժամկետը։</h4>
+        <p data-i18n="faq_a1">Ստանդարտ արևային մաքրման ռոբոտները պատրաստ են լինում 2-3 շաբաթում։ Բարդ PLC/SCADA ավտոմատացման կամ custom PCB նախագծերը տևում են 4-ից 8 շաբաթ։</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q2">2. Տալի՞ս եք արդյունաբերական երաշխիք և սպասարկում։</h4>
+        <p data-i18n="faq_a2">Այո, մեր բոլոր պատրաստի սարքավորումներին տրամադրվում է 12-ից 36 ամսվա պաշտոնական երաշխիք և հետերաշխիքային 24/7 տեխնիկական սպասարկում։</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q3">3. Ինչպե՞ս է իրականացվում Custom PCB էլեկտրոնային սալիկի պատվերը։</h4>
+        <p data-i18n="faq_a3">Դուք ներկայացնում եք տեխնիկական առաջադրանքը, մենք մշակում ենք սխեման (Schematic), կատարում ենք PCB Layout-ը Altium-ով, պատրաստում պրոտոտիպը և թեստավորում լաբորատորիայում։</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q4">4. Արդյո՞ք MGG ռոբոտները վնասում են արևային պանելների ապակին։</h4>
+        <p data-i18n="faq_a4">Ոչ, մեր ռոբոտներում օգտագործվում են հատուկ փափուկ micro-fiber չոր խոզանակներ և ռեզինե թրթուրներ, որոնք բացառում են քերծվածքների առաջացումը։</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q5">5. Կարո՞ղ ենք ինտեգրել ձեր սարքավորումները մեր գործող SCADA համակարգին։</h4>
+        <p data-i18n="faq_a5">Այո, մեր բոլոր կոնտրոլերներն աջակցում են Modbus RTU/TCP, Profinet, CAN bus և MQTT պրոտոկոլները, ինչը թույլ է տալիս հեշտությամբ միանալ ցանկացած SCADA-ի։</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q6">6. Ինչպե՞ս է իրականացվում ռոբոտի լիցքավորումը դաշտային պայմաններում։</h4>
+        <p data-i18n="faq_a6">Ռոբոտներն ունեն իրենց վրա տեղադրված սեփական արևային մարտկոց և LiFePO4 ակումուլյատոր, ինչպես նաև ավտոմատ Docking Station ինքնալիցքավորման համար։</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q7">7. Ինչպե՞ս է հաշվարկվում ավտոմատացման նախագծի արժեքը։</h4>
+        <p data-i18n="faq_a7">Արժեքը ձևավորվում է բաղադրիչների (hardware), ծրագրավորման ծավալի (firmware/PLC) և տեղադրման/կարգաբերման աշխատանքների հիման վրա։</p>
+      </div>
+      <div class="faq-item">
+        <h4 data-i18n="faq_q8">8. Իրականացնո՞ւմ եք արտահանում կամ միջազգային պատվերներ։</h4>
+        <p data-i18n="faq_a8">Այո, մեր պատրաստի սարքավորումներն ու էլեկտրոնային սալիկները կարող են առաքվել և տեղադրվել ցանկացած երկրում։</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<main id="page-contact" class="page-view">
     <section class="section">
-      <div class="container" style="max-width: 950px;">
-        <div class="faq-item">
-          <h4>1. Որքա՞ն է պատվերի պատրաստման և ներդրման ժամկետը։</h4>
-          <p>Ստանդարտ արևային մաքրման ռոբոտները պատրաստ են լինում 2-3 շաբաթում։ Բարդ PLC/SCADA ավտոմատացման կամ custom PCB նախագծերը տևում են 4-ից 8 շաբաթ։</p>
-        </div>
-        <div class="faq-item">
-          <h4>2. Տալի՞ս եք արդյունաբերական երաշխիք և սպասարկում։</h4>
-          <p>Այո, մեր բոլոր պատրաստի սարքավորումներին տրամադրվում է 12-ից 36 ամսվա պաշտոնական երաշխիք և հետերաշխիքային 24/7 տեխնիկական սպասարկում։</p>
-        </div>
-        <div class="faq-item">
-          <h4>3. Ինչպե՞ս է իրականացվում Custom PCB էլեկտրոնային սալիկի պատվերը։</h4>
-          <p>Դուք ներկայացնում եք տեխնիկական առաջադրանքը, մենք մշակում ենք սխեման (Schematic), կատարում ենք PCB Layout-ը Altium-ով, պատրաստում պրոտոտիպը և թեստավորում լաբորատորիայում։</p>
-        </div>
-        <div class="faq-item">
-          <h4>4. Արդյո՞ք MGG ռոբոտները վնասում են արևային պանելների ապակին։</h4>
-          <p>Ոչ, մեր ռոբոտներում օգտագործվում են հատուկ փափուկ micro-fiber չոր խոզանակներ և ռեզինե թրթուրներ, որոնք բացառում են քերծվածքների առաջացումը։</p>
-        </div>
-        <div class="faq-item">
-          <h4>5. Կարո՞ղ ենք ինտեգրել ձեր սարքավորումները մեր գործող SCADA համակարգին։</h4>
-          <p>Այո, մեր բոլոր կոնտրոլերներն աջակցում են Modbus RTU/TCP, Profinet, CAN bus և MQTT պրոտոկոլները, ինչը թույլ է տալիս հեշտությամբ միանալ ցանկացած SCADA-ի։</p>
-        </div>
-        <div class="faq-item">
-          <h4>6. Ինչպե՞ս է իրականացվում ռոբոտի լիցքավորումը դաշտային պայմաններում։</h4>
-          <p>Ռոբոտներն ունեն իրենց վրա տեղադրված սեփական արևային մարտկոց և LiFePO4 ակումուլյատոր, ինչպես նաև ավտոմատ Docking Station ինքնալիցքավորման համար։</p>
-        </div>
-        <div class="faq-item">
-          <h4>7. Ինչպե՞ս է հաշվարկվում ավտոմատացման նախագծի արժեքը։</h4>
-          <p>Արժեքը ձևավորվում է բաղադրիչների (hardware), ծրագրավորման ծավալի (firmware/PLC) և տեղադրման/կարգաբերման աշխատանքների հիման վրա։</p>
-        </div>
-        <div class="faq-item">
-          <h4>8. Իրականացնո՞ւմ եք արտահանում կամ միջազգային պատվերներ։</h4>
-          <p>Այո, մեր պատրաստի սարքավորումներն ու էլեկտրոնային սալիկները կարող են առաքվել և տեղադրվել ցանկացած երկրում։</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-  <main id="page-contact" class="page-view">
-    <section class="section">
       <div class="container">
-        <h2 class="section-title">Կապնվեք Մեզ Հետ</h2>
-        <p class="section-subtitle">Ուղարկեք հարցում կամ պատվիրեք անվճար տեխնիկական խորհրդատվություն</p>
+        <h2 class="section-title" data-i18n="contact_title">Կապնվեք Մեզ Հետ</h2>
+        <p class="section-subtitle" data-i18n="contact_subtitle">Ուղարկեք հարցում կամ պատվիրեք անվճար տեխնիկական խորհրդատվություն</p>
 
         <div class="grid-2">
           <div class="form-box">
@@ -764,48 +763,48 @@
 
             <form id="contactForm" onsubmit="submitForm(event)">
               <div class="form-group">
-                <label for="name">Անուն Ազգանուն *</label>
+                <label for="name" data-i18n="form_label_name">Անուն Ազգանուն *</label>
                 <input type="text" id="name" name="name" placeholder="Պողոս Պողոսյան" required>
               </div>
               <div class="form-group">
-                <label for="phone">Հեռախոսահամար *</label>
+                <label for="phone" data-i18n="form_label_phone">Հեռախոսահամար *</label>
                 <input type="tel" id="phone" name="phone" placeholder="+374 99 000000" required>
               </div>
               <div class="form-group">
-                <label for="email">Էլ․ Փոստ</label>
+                <label for="email" data-i18n="form_label_email">Էլ․ Փոստ</label>
                 <input type="email" id="email" name="email" placeholder="example@domain.com">
               </div>
               <div class="form-group">
-                <label for="system-type">Հետաքրքրող Ուղղությունը</label>
+                <label for="system-type" data-i18n="form_label_select">Հետաքրքրող Ուղղությունը</label>
                 <select id="system-type" name="system_type">
-                  <option value="Solar Cleaning Robots">Արևային Կայանների Ավտոմատ Մաքրում</option>
-                  <option value="Industrial Automation PLC/SCADA">Արդյունաբերական Ավտոմատացում (PLC/SCADA)</option>
-                  <option value="Custom Hardware & PCB Design">Custom PCB & Embedded Hardware Design</option>
-                  <option value="AGV Logistics Robots">AGV/AMR Բեռնատար Ռոբոտներ</option>
-                  <option value="Industrial IoT Telemetry">Industrial IoT & Telemetry Systems</option>
+                  <option value="Solar Cleaning Robots" data-i18n="opt_solar">Արևային Կայանների Ավտոմատ Մաքրում</option>
+                  <option value="Industrial Automation PLC/SCADA" data-i18n="opt_auto">Արդյունաբերական Ավտոմատացում (PLC/SCADA)</option>
+                  <option value="Custom Hardware & PCB Design" data-i18n="opt_pcb">Custom PCB & Embedded Hardware Design</option>
+                  <option value="AGV Logistics Robots" data-i18n="opt_agv">AGV/AMR Բեռնատար Ռոբոտներ</option>
+                  <option value="Industrial IoT Telemetry" data-i18n="opt_iot">Industrial IoT & Telemetry Systems</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="message">Հաղորդագրություն</label>
+                <label for="message" data-i18n="form_label_message">Հաղորդագրություն</label>
                 <textarea id="message" name="message" rows="5" placeholder="Նկարագրեք ձեր տեխնիկական առաջադրանքը..." required></textarea>
               </div>
-              <button type="submit" id="submitBtn" class="btn-primary" style="width: 100%; justify-content: center;">Ուղարկել Հայտը</button>
+              <button type="submit" id="submitBtn" class="btn-primary" style="width: 100%; justify-content: center;" data-i18n="form_btn_submit">Ուղարկել Հայտը</button>
             </form>
           </div>
 
           <div>
             <div class="card" style="margin-bottom: 24px;">
-              <h3>📍 Արտադրամաս և Գրասենյակ</h3>
-              <p>ք. Երևան, Մուրացան փ․ (Արտադրական մասնաշենք)</p>
-              <p style="margin-top: 8px; color: var(--primary); font-weight: 600;">Աշխատանքային ժամեր: Երկ - Ուրբ (09:00 - 18:00)</p>
+              <h3 data-i18n="info_address_title">📍 Արտադրամաս և Գրասենյակ</h3>
+              <p data-i18n="info_address_text">ք. Երևան, Մուրացան փ․ (Արտադրական մասնաշենք)</p>
+              <p style="margin-top: 8px; color: var(--primary); font-weight: 600;" data-i18n="info_hours_text">Աշխատանքային ժամեր: Երկ - Ուրբ (09:00 - 18:00)</p>
             </div>
             <div class="card" style="margin-bottom: 24px;">
-              <h3>📞 Հեռախոսակապ</h3>
-              <p>+374 44 77-47-48 (Գրասենյակ)</p>
-              <p>+374 99 00-00-00 (Տեխնիկական բաժին)</p>
+              <h3 data-i18n="info_phone_title">📞 Հեռախոսակապ</h3>
+              <p data-i18n="info_phone_main">+374 44 77-47-48 (Գրասենյակ)</p>
+              <p data-i18n="info_phone_tech">+374 99 00-00-00 (Տեխնիկական բաժին)</p>
             </div>
             <div class="card">
-              <h3>✉️ Էլեկտրոնային Փոստ</h3>
+              <h3 data-i18n="info_email_title">✉️ Էլեկտրոնային Փոստ</h3>
               <p>mggindustries.company@gmail.com</p>
             </div>
           </div>
@@ -814,50 +813,55 @@
     </section>
   </main>
 
-
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
           <a onclick="showPage('home')" class="logo" style="color: white; margin-bottom: 15px;">❖ MGG <span style="color: var(--primary);">SYSTEMS</span></a>
-          <p>Բարձր տեխնոլոգիական ինժեներական լուծումներ, ռոբոտոսարքավորումների արտադրություն, PLC/SCADA ավտոմատացում և custom էլեկտրոնային սալիկների (PCB) նախագծում։</p>
+          <p data-i18n="footer_about">Բարձր տեխնոլոգիական ինժեներական լուծումներ, ռոբոտոսարքավորումների արտադրություն, PLC/SCADA ավտոմատացում և custom էլեկտրոնային սալիկների (PCB) նախագծում։</p>
         </div>
 
         <div class="footer-col">
-          <h4>Նավիգացիա</h4>
+          <h4 data-i18n="footer_nav_title">Նավիգացիա</h4>
           <ul class="footer-links">
-            <li><a onclick="showPage('home')">Գլխավոր</a></li>
-            <li><a onclick="showPage('about')">Մեր Մասին</a></li>
-            <li><a onclick="showPage('projects')">Նախագծեր</a></li>
-            <li><a onclick="showPage('faq')">FAQ</a></li>
-            <li><a onclick="showPage('contact')">Կապ</a></li>
+            <li><a onclick="showPage('home')" data-i18n="nav_home">Գլխավոր</a></li>
+            <li><a onclick="showPage('about')" data-i18n="nav_about">Մեր Մասին</a></li>
+            <li><a onclick="showPage('projects')" data-i18n="nav_projects">Նախագծեր</a></li>
+            <li><a onclick="showPage('faq')" data-i18n="nav_faq">FAQ</a></li>
+            <li><a onclick="showPage('contact')" data-i18n="nav_contact">Կապ</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Ծառայություններ</h4>
+          <h4 data-i18n="footer_services_title">Ծառայություններ</h4>
           <ul class="footer-links">
-            <li><a onclick="showPage('solar')">☀️ Արևային Ռոբոտներ</a></li>
-            <li><a onclick="showPage('automation')">⚙️ PLC Ծրագրավորում</a></li>
-            <li><a onclick="showPage('hardware')">🔬 Custom PCB Layout</a></li>
+            <li><a onclick="showPage('solar')" data-i18n="nav_solar">☀️ Արևային Ռոբոտներ</a></li>
+            <li><a onclick="showPage('automation')" data-i18n="nav_auto">⚙️ PLC Ծրագրավորում</a></li>
+            <li><a onclick="showPage('hardware')" data-i18n="nav_hw">🔬 Custom PCB Layout</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Կոնտակտներ</h4>
-          <p>📍 ք. Երևան, Մուրացան փ․</p>
+          <h4 data-i18n="footer_contacts_title">Կոնտակտներ</h4>
+          <p data-i18n="footer_address">📍 ք. Երևան, Մուրացան փ․</p>
           <p>📞 +374 44 77-47-48</p>
-          <p>✉️mggindustries.company@gmail.com</p>
+          <p>✉️ mggindustries.company@gmail.com</p>
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-bottom" data-i18n="footer_copy">
         &copy; 2026 MGG Systems. Բոլոր իրավունքները պաշտպանված են։ | Industrial Engineering & Robotics Solutions
       </div>
     </div>
   </footer>
 
-
   <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
